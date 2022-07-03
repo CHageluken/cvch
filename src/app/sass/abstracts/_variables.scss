@@ -1,0 +1,41 @@
+$color-primary-light:rgb(249, 247, 246);
+$color-primary: rgb(170, 170, 170);
+$color-primary-dark: #6D5D4B;
+$color-text-base: #101d2c;
+$color-button: #54483A;
+$color-text-button: rgb(54, 53, 53);
+
+// borders
+$border-light: 0.2rem solid $color-primary-light;
+$border-dark: 0.2rem solid $color-primary-dark;
+
+// responsive breakpoints
+$bp-largest: 75%;        // 1800px => 1rem = 12px  12/16
+$bp-large:  56.25%;      // 1200px => 1rem = 9px    9/16 = 62.5%
+$bp-medium: 50%;         //  900px => 1rem = 8px    8/16
+$bp-small: 37.5%;        //  600px => 1rem = 6px    6/16
+
+$font-extralarge: 4rem;
+$font-large: 2rem;
+$font-large-medium: 1.7rem;
+$font-medium: 1.4rem; 
+$font-medium-small: 1.2rem;
+$font-small: 1rem;
+$font-extra-small: 0.5rem;
+
+$font-small-tab-port: 1rem;
+$font-small-tab-phone: 0.8rem;
+$font-infotable: $font-medium;
+$font-size-popup: $font-medium;
+$font-size-motivation: $font-medium;
+$font-size-languages: $font-medium;
+$font-size-hobbies: $font-medium-small;
+$font-size-knowledge: $font-medium;
+$font-size-work-caption: $font-medium;
+$font-size-button-large: $font-large;
+$font-size-button-extralarge: $font-extralarge;
+
+$font-size-heading-2: $font-large; 
+$font-size-heading-3: $font-medium;
+$font-size-heading-4: $font-small;
+$font-size-close: 2.5rem; // close cross

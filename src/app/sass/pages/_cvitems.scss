@@ -1,0 +1,9 @@
+.cvitems {
+  display: block;
+  background-color: $color-primary-light;
+  border-left: $border-dark;
+  @include respond(phone) {
+    border-top: $border-dark;
+    border-left: none;
+  }
+}

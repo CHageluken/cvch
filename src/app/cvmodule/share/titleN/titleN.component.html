@@ -1,0 +1,24 @@
+<div *ngIf = "titleno=='2'">
+  <div class="u-center-text">
+    <h2 class="heading-2">
+        {{title}} 
+        <span *ngIf="titlehook"><{{titlehook}})</span>
+    </h2>
+  </div>
+</div>
+<div *ngIf = "titleno=='3'">
+  <div class="u-left-text">
+    <h3 class="heading-3">
+        {{title}}
+        <span *ngIf="titlehook">({{titlehook}})</span>
+    </h3>
+  </div>
+</div>
+<div *ngIf = "titleno=='4'">
+  <div class="u-left-text">
+    <h4 class="heading-4">
+        {{title}}
+        <span *ngIf="titlehook"><{{titlehook}})</span>
+    </h4>
+  </div>
+</div>

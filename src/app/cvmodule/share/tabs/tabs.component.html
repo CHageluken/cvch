@@ -1,0 +1,19 @@
+<div class="tabs" >
+  <div class="tabs-div" *ngFor="let item of cvitems">
+
+    <a *ngIf="currentlink !== item.link"
+       class="btn btn-small tabs-a" 
+       routerLink={{item.link}} 
+       (click)="routeChange(item.link)">
+       {{item.title}}
+    </a>
+    <a *ngIf="currentlink === item.link"
+      class="btn btn-small tabs-a tabs-active" 
+      routerLink={{item.link}} 
+      (click)="routeChange(item.link)">
+      {{item.title}}
+    </a>
+
+  </div>  
+</div>
+  

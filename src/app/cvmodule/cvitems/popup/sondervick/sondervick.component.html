@@ -1,0 +1,10 @@
+<div class="popup pageframe-content">
+    <div class="popup-content">
+        <app-popupreturn></app-popupreturn>
+        <app-titlen title="Extra taken" titleno="3"></app-titlen>
+        <br>
+        <div *ngFor="let item of lines" class="infoline">
+            <app-infoline [info] = item></app-infoline>
+        <div>
+    </div>
+</div>

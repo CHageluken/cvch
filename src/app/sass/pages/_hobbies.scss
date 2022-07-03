@@ -1,0 +1,115 @@
+.hobbies{
+  height: 80vh;
+  width: 70vw;
+  margin-left: 5vw;
+  margin-top:2vw;
+  
+  @include respond(phone) {
+    height: 90vh;
+    width: 90vw;
+  }
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(16,1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: .3rem;
+  
+  &-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &-1{
+      grid-column: 1/2;
+      grid-row: 1/span 5;
+      
+      align-self: start;
+    }
+
+    &-2{
+      grid-column: 2/span 2;
+      grid-row: 1/span 4;
+      align-self: start;
+    }
+
+    &-3{
+      grid-column: 4/5;
+      grid-row: 1/span 5;
+    }
+
+    &-4{
+      grid-column: 2/3;
+      grid-row: 9/span 3;
+    }
+
+    &-5{
+      grid-column: 2/3;
+      grid-row: 6/span 3;
+    }
+
+    &-6{
+      grid-column: 1/2;
+      grid-row: 8/span 4;
+    }
+
+    &-7{
+      grid-column: 3/span 2;
+      grid-row: 7/span 5;
+    }
+
+    &-8{
+      
+      grid-column: 1/span 2;
+      grid-row: 12/span 4;
+
+    }
+  }
+
+  &-p {
+    font-size: $font-size-hobbies;
+    font-family: 'Nunito', cursive;
+    color: $color-primary-dark;
+    line-height: 1rem;
+
+
+    &-1 {
+      grid-column: 2/4;
+      grid-row: 5/span 1;
+    }
+
+    &-2 {
+      grid-column: 1/2;
+      grid-row: 6/span 2;
+      align-self: end;
+    }
+
+    &-3{
+      grid-column: 3/span 2;
+      grid-row: 6/span 1;
+      align-self: end;
+    }
+
+    &-4{
+      grid-column: 1/span 2;
+      grid-row: 16;
+    }
+
+    &-5{
+      grid-column: 3/span 2;
+      grid-row: 13/span 1;
+      align-self: end;
+    }
+
+    &-6{
+      align-self: center;
+      grid-column: 3/span 2;
+      grid-row: 14/span 1;
+    }
+    &-7{
+      
+      align-self: start;
+      grid-column: 3/span 2;
+      grid-row: 15/span 1;
+    }
+  }
+}

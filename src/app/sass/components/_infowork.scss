@@ -1,0 +1,58 @@
+.infowork {
+    padding: 0 1.5rem;
+    font-size: $font-small;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
+    
+    @include respond(phone) {
+        width: 80vw;
+        margin-left:5vw;
+      }
+
+    display: grid;
+    justify-items: start;
+    grid-template-columns: max-content 50vw;
+    grid-template-rows: repeat(5, min-content);
+    grid-column-gap: 3vw;
+
+    @include respond(phone) {
+        grid-template-columns: max-content 30vw;
+    }
+
+    &-task {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    
+    &-project {
+        grid-column: 2/-1; 
+        grid-row:2/3
+    }
+    &-description {
+        grid-column: 2/-1;
+        grid-row: 3/4;
+    }
+    &-keyword {
+        grid-column: 2/-1;
+        grid-row: 4/5;
+    }
+    &-task {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    
+    &-project-label {
+        grid-column: 1/2; 
+        grid-row:2/3
+    }
+    &-description-label {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    &-keyword-label {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
+  
+  

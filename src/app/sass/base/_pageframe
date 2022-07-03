@@ -1,0 +1,53 @@
+.pageframe {
+  display:grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 10vh 80vh;
+  justify-content: center;
+  border-right: 5vh solid $color-primary-dark;
+  justify-items: center;
+  background-color:  $color-primary-light;
+
+  @include respond(phone) {
+    border: none;
+    grid-template-columns: min-content;
+    grid-template-rows: max-content;
+  }
+  @include respond(tab-port) {
+    border: none;
+  }
+  
+  &-side {
+    background-color: $color-primary-dark;
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    @include respond(phone) {
+      background-color: green;
+      grid-row: 1/2;
+    }  
+  }
+  
+  &-tabs {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    @include respond(phone) {
+      grid-column: 1/2;
+      grid-row: 2/3; 
+    } 
+  }
+
+  &-content {
+    justify-self: center;
+    align-self: center;
+    background-color: $color-primary-light;
+
+    grid-column: 2/4;
+    grid-row: 2/3;
+      
+    @include respond(phone) {
+      grid-column: 1/2;
+      grid-row: 3/4; 
+    }   
+  } 
+}

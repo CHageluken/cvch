@@ -1,0 +1,75 @@
+.popup {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(black, .6);
+  z-index: 9999;
+  opacity: 1;
+  overflow-y: scroll !important;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(5px);
+      background-color: rgba(black, .6);
+  }
+
+  &-extra {
+    font-size: $font-size-popup;
+    margin: 1vw;
+    padding: 1vw;
+    box-shadow: 0 2rem 4rem rgba(black, .2);
+    border-radius: 3px;
+    opacity: 1;
+
+}
+  &-content {
+      font-size: $font-size-popup;
+      padding: 1vw;
+      position: relative;
+      width: 80vw;
+      top: 5vh;
+      left: 10vw;
+
+      display: block;
+      background-color: white;
+      box-shadow: 0 2rem 4rem rgba(black, .2);
+      border-radius: 3px;
+      opacity: 1;
+  }
+
+  ul {
+    padding-left: 2vw;
+  }
+
+  &-img {
+    display:block;
+    width: 90%;
+}
+
+  //Open states
+  &:target {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  &:target &-content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+
+  &-close {
+    fill: red;
+    font-size: $font-size-close;
+    width: 95%;
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+
+      &:hover {
+          color: $color-primary;
+      }
+  }
+}

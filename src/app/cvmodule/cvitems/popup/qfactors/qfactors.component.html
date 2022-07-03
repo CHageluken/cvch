@@ -1,0 +1,9 @@
+<div class="popup pageframe-content">
+  <div class="popup-content">
+      <app-popupreturn></app-popupreturn>
+      <div class="popup-extra">QFactors b.v. ontwikkelt in eigen beheer een ERP applicatie genaamd eSmartbox. In eSmartbox kunnen firma’s onder andere een personeelsbestand bijhouden en werknemers kunnen uren en kilometers declareren, declaraties, vakantie- en ziektedagen doorvoeren. Verder zijn er modules voor relatiebeheer en projectbeheer.</div>
+      <div *ngFor="let item of works">
+          <app-infowork [info] = item ></app-infowork>
+      <div>
+  </div>
+</div>

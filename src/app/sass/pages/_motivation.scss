@@ -1,0 +1,25 @@
+.motivation {
+  &_textbox{
+    margin-left: 2vw;
+    width: 70vw;   
+  
+    @include respond(phone) {
+      width: 80vw; 
+    }
+    color: $color-button;  
+    font-size: $font-size-motivation;   
+  }
+
+  &_img {
+    width: 2rem;
+    margin-right: 1rem;
+    @include respond(phone) {
+      display: none
+    }
+  }
+
+  &_p {
+    margin-bottom: 0.5rem;
+    font-size: inherit;
+  }
+}

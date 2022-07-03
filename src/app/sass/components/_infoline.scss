@@ -1,0 +1,44 @@
+.infoline {
+  font-size: $font-small;
+  background-color: white;
+  display: grid;
+  justify-items: start;
+  width: 40vw;
+  @include respond(phone) {
+    width: 80vw;
+    margin-left:5vw;
+ }
+  grid-template-columns: 10rem max-content 1fr;
+  grid-column-gap: 2rem;
+  
+  &-period {
+    grid-column: 1/2;
+  }
+
+  &-remark {
+    justify-self: start;
+    grid-column: 2/3;
+    padding-right: 1rem;
+  }
+  &-link {
+    justify-self: end;
+    background-color:white;
+    grid-column: 3/4;
+    a {
+      transform: translateY(-.8rem);
+      background-color:white;
+      
+      &:hover {
+        color: blue;
+        border: none;
+      }
+
+    }
+    .bi {
+      color: currentColor;
+    }
+
+  }
+}
+
+  

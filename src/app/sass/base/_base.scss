@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  zoom: 100%;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $color-text-base;
+  padding: 1vw;
+
+  @include respond(tab-port) {
+    margin: 0 3vw;
+    padding: 0rem;
+    padding-top: 1vh;
+  }
+
+  @include respond(phone) {
+    margin: 0;
+    padding: 0rem;
+    padding-top: 1vh;
+  }
+}
+
+html{
+  background-color: $color-primary-light;
+  font-size: 62.5%;
+
+  @include respond(big-desktop) { font-size: $bp-largest; }
+  @include respond(tab-land) { font-size: $bp-large; }
+  @include respond(tab-port) { font-size: $bp-medium; }
+  @include respond(phone) { font-size: $bp-small; }
+}
+

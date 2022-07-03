@@ -1,0 +1,32 @@
+.language{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  @include respond(phone){
+    margin-top: 10vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+     
+  }
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &-text {
+    font-family: 'Nunito', cursive;
+    text-align: center;
+    font-size: $font-size-languages;
+    color: $color-primary-dark;
+  }
+  &-1 {
+    grid-row: 1/2;
+    background-image: url(https://youtu.be/S_o-TJRHuIQ);
+  }
+  &-img >img{
+    padding: 2rem;
+    height: 12rem;
+    width: 100%;
+  }
+}

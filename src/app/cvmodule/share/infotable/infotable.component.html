@@ -1,0 +1,22 @@
+<div class="infotable u-infomargin">
+  <img *ngIf= "info.image1" src={{info.image1}} alt="logo"
+        class="infotable-img" style="height: 5rem">
+  <img *ngIf= "info.image2" src={{info.image2}} alt="logo"
+        class="infotable-img" style="width: 100%;">
+  <app-titlen titleno=3 title="{{info.company}}" class="infotable-heading"></app-titlen>
+  <div class="infotable-period">{{info.period}}</div>
+  <div class="infotable-remark">
+    <p>{{info.remark1}}</p>
+    <p *ngIf = "info.remark2">{{info.remark2}}</p>
+    <p *ngIf = "info.remark3">{{info.remark3}}</p>
+  </div>
+  <div class="infotable-link">
+    <a *ngIf= "info.link1" routerLink={{info.link1}}
+        class="btn btn-info">
+        <i class="bi bi-info-circle-fill" fill="currentColor" ></i>
+    </a>
+    <p *ngIf= "!info.link1">&nbsp;
+    </p>
+  </div >
+</div>
+
