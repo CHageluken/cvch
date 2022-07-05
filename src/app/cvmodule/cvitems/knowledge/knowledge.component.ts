@@ -18,7 +18,7 @@ export class KnowledgeComponent {
     {header: "Web", 
      content: "XML, REST, SOAP, JSP, JSTL, YAML"},
     {header: "Talen", 
-     content:"Java 7/8/11, JavaScript, HTML 4/5, MySQL, PostGreSQL, XQuery, Basic and Pascal, Haskell"}, 
+     content:"Java 7/8/11, JavaScript, HTML 4/5, MySQL, PostGreSQL, XQuery, Python, Basic and Pascal, Haskell"}, 
     {header: "DevOps", 
      content: "Git (GitHub, Bitbucket, SourceTree), Jenkins, Jira, Subversion/ortoiseSVN, Gitea"}, 
     {header: "Basis", 
