@@ -2,22 +2,18 @@
   background-color: $color-primary-light;    
   box-shadow: 0 0.5rem 1rem $color-primary; 
   border-radius: 1rem;
-  
+  width: $basic-width;
   display: grid;
   grid-template-columns: repeat(8, max-content);
-  align-content: center; 
-
+  justify-content:space-around;
+  
   @include respond(phone) {
     box-shadow: none; 
     border: none;
-    margin: 1vh 0;
   }
 
   &-a {
-    font-size: $font-medium;
-    @include respond(phone) {
-      font-size: $font-medium;
-    } 
+    font-size: $font-medium; 
     float: right;
   }
   &-active {

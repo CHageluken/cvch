@@ -16,10 +16,8 @@ import { QfactorsComponent } from './cvmodule/cvitems/popup/qfactors/qfactors.co
 import { OrganonComponent } from './cvmodule/cvitems/popup/organon/organon.component';
 import { SligroComponent } from './cvmodule/cvitems/popup/sligro/sligro.component';
 import { SligrostageComponent } from './cvmodule/cvitems/popup/sligrostage/sligrostage.component';
-import { StudyProgramComponent } 
-  from './cvmodule/cvitems/popup/study-program/study-program.component';
-import { PublicationsComponent } 
-from './cvmodule/cvitems/popup/publications/publications.component';
+import { StudyComponent } from './cvmodule/cvitems/popup/study/study.component';
+import { PublicationsComponent } from './cvmodule/cvitems/popup/publications/publications.component';
 import { SondervickComponent } from './cvmodule/cvitems/popup/sondervick/sondervick.component';
 import { LuzacComponent } from './cvmodule/cvitems/popup/luzac/luzac.component';
 
@@ -32,7 +30,7 @@ const appRouter: Routes =
             { path: 'courses', component: CoursesComponent },
             { path: 'education', component: EducationComponent ,
               children: [
-                {path: 'study', component: StudyProgramComponent}
+                {path: 'study', component: StudyComponent}
               ]},
             { path: 'hobbies', component: HobbiesComponent },
             { path: 'knowledge', component: KnowledgeComponent },

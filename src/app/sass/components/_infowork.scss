@@ -5,7 +5,7 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
     
     @include respond(phone) {
-        width: 80vw;
+        width: $basic-width;
         margin-left:5vw;
       }
 

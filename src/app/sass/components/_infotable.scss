@@ -5,7 +5,7 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
   width: 70vw; 
   @include respond(phone) {
-    width: 80vw;
+    width:  $basic-width;
     margin-left:5vw;
   }
   display: grid;
@@ -13,6 +13,7 @@
   align-items: center;
 
   grid-template-columns: 5vw 13vw max-content 1fr;
+  
   grid-template-rows: 2.5vw min-content;
   grid-column-gap: 2vw;
 

@@ -11,12 +11,6 @@ body {
   color: $color-text-base;
   padding: 1vw;
 
-  @include respond(tab-port) {
-    margin: 0 3vw;
-    padding: 0rem;
-    padding-top: 1vh;
-  }
-
   @include respond(phone) {
     margin: 0;
     padding: 0rem;
@@ -28,9 +22,10 @@ html{
   background-color: $color-primary-light;
   font-size: 62.5%;
 
-  @include respond(big-desktop) { font-size: $bp-largest; }
   @include respond(tab-land) { font-size: $bp-large; }
   @include respond(tab-port) { font-size: $bp-medium; }
+  @include respond(large-phone) { font-size: $bp-smallmedium; }
   @include respond(phone) { font-size: $bp-small; }
+  @include respond(big-desktop) { font-size: $bp-largest; }   
 }
 

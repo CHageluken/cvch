@@ -13,6 +13,7 @@ $border-dark: 0.2rem solid $color-primary-dark;
 $bp-largest: 75%;        // 1800px => 1rem = 12px  12/16
 $bp-large:  56.25%;      // 1200px => 1rem = 9px    9/16 = 62.5%
 $bp-medium: 50%;         //  900px => 1rem = 8px    8/16
+$bp-smallmedium: 43%;        //  600px => 1rem = 6px    6/16
 $bp-small: 37.5%;        //  600px => 1rem = 6px    6/16
 
 $font-extralarge: 4rem;
@@ -25,13 +26,15 @@ $font-extra-small: 0.5rem;
 
 $font-small-tab-port: 1rem;
 $font-small-tab-phone: 0.8rem;
+$font-size-hobbies: $font-medium-small;
+
 $font-infotable: $font-medium;
 $font-size-popup: $font-medium;
 $font-size-motivation: $font-medium;
 $font-size-languages: $font-medium;
-$font-size-hobbies: $font-medium-small;
 $font-size-knowledge: $font-medium;
 $font-size-work-caption: $font-medium;
+
 $font-size-button-large: $font-large;
 $font-size-button-extralarge: $font-extralarge;
 
@@ -39,3 +42,17 @@ $font-size-heading-2: $font-large;
 $font-size-heading-3: $font-medium;
 $font-size-heading-4: $font-small;
 $font-size-close: 2.5rem; // close cross
+
+$small-padding: 0.2vw;
+$large-width: 90vw;
+
+$content-width: 76vw; // 70 + 2*3;
+$side-width: 24vw; // 100 -76
+$basic-padding: 3vw;
+$basic-width: 70vw;
+$basic-width2: 30vw; // 70/2 afgerond
+
+
+$phone-padding: 1vw;
+$phone-width: 90vw;
+$phone-width2: 45vw;

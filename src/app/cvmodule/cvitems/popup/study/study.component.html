@@ -1,0 +1,36 @@
+
+<div class="popup pageframe-content">
+  <div class="popup-content">
+    <app-popupreturn></app-popupreturn>
+    <div >
+      <p ><b><u>Vakkenpakket bachelor
+      Informatica Open Universiteit</u></b></p>
+      <br>
+      <table class="study">
+        <tbody>
+          <tr class="study study-th">
+            <th class="study study-th">Punt</th>
+            <th class="study study-th">Java gerelateerde cursussen</th>
+            <th class="study study-th">Punt</th>
+            <th class="study study-th">Overige cursussen</th>
+          </tr>
+          <tr *ngFor="let item of cijfers" class="study study-tr">
+            <td class="study study-td-punt">{{item.p1}}</td>
+            <td class="study study-td-vak">{{item.v1}}</td>
+            <td class="study study-td-punt">{{item.p2}}</td>
+            <td class="study study-td-vak">{{item.v2}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>De Open Universiteit biedt
+        cursussen aan waarmee men ruime
+        praktische werkervaring krijgt</li>
+        
+        <li>Een deel
+        van het vakkenpakket leidt op voor het officiële CPP
+        Gecertificeerd Javaprogrammeur</li>
+      </ul>
+    </div>
+  </div>
+</div>

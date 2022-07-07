@@ -17,7 +17,7 @@ import { OrganonComponent } from './popup/organon/organon.component';
 import { QfactorsComponent } from './popup/qfactors/qfactors.component';
 import { SligroComponent } from './popup/sligro/sligro.component';
 import { PublicationsComponent } from './popup/publications/publications.component';
-import { StudyProgramComponent } from './popup/study-program/study-program.component';
+import { StudyComponent } from './popup/study/study.component';
 import { LuzacComponent } from './popup/luzac/luzac.component';
 import { SondervickComponent } from './popup/sondervick/sondervick.component';
 import { SligrostageComponent } from './popup/sligrostage/sligrostage.component';
@@ -36,7 +36,7 @@ import { SligrostageComponent } from './popup/sligrostage/sligrostage.component'
     SligroComponent,
     SligrostageComponent,
     PublicationsComponent,
-    StudyProgramComponent,
+    StudyComponent,
     LuzacComponent,
     SondervickComponent
   ],

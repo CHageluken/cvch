@@ -1,11 +1,6 @@
 .motivation {
-  &_textbox{
-    margin-left: 2vw;
-    width: 70vw;   
-  
-    @include respond(phone) {
-      width: 80vw; 
-    }
+     
+  &_textbox {
     color: $color-button;  
     font-size: $font-size-motivation;   
   }

@@ -1,6 +1,13 @@
-<div class="knowledge" *ngFor="let item of knows"  >
-    <app-titlen title={{item.header}} titleno="3"></app-titlen>
-    
-    <div>{{item.content}}</div>
-  <div>
+<table class="knowledge">
+  <tbody>
+    <tr *ngFor="let item of knows" class="knowledge knowledge-tr">
+      <td class="knowledge knowledge-td-header">
+        <app-titlen title={{item.header}} titleno="1"></app-titlen>
+      </td>
+      <td class="knowledge knowledge-td-content">
+        <p>{{item.content}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 

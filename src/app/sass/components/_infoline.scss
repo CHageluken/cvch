@@ -5,8 +5,8 @@
   justify-items: start;
   width: 40vw;
   @include respond(phone) {
-    width: 80vw;
-    margin-left:5vw;
+    width: $basic-width;
+    margin-left: $basic-padding;
  }
   grid-template-columns: 10rem max-content 1fr;
   grid-column-gap: 2rem;

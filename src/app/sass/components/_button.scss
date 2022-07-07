@@ -30,12 +30,10 @@
   color: $color-text-button;
   background-color: $color-primary-light;
   font-size: $font-small;
-  padding: 1vh 1vw;
-  margin: 1vh 1vw ;
+  padding: $small-padding;
+  margin: $small-padding;
 
   @include respond(phone) {
-    padding: 0.3vh 0.3vw;
-    margin: 0.3vh 0.3vw ;
     border:1px solid rgba($color-text-base, 0.75);
     border-radius: 1rem;
   } 

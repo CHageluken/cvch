@@ -1,0 +1,33 @@
+.table, .th, .td {
+    border: $border-dark;
+}
+
+.tr {
+    height: 1rem;
+}
+.study{
+    border-collapse: collapse;
+    border: $border-dark;
+    height: 0.1rem;
+    &-th {
+        background-color:$color-primary-dark;
+        color: $color-primary-light;
+        text-align: left;
+        padding: 0.1rem 0.4rem;
+    }
+        
+    &-td {
+        background:$color-primary-light;
+        padding: 0.1rem 0.1rem;        
+        &-vak {
+            padding: 0.1rem 0.3rem;     
+            width: 30rem;
+        }
+        &-punt {
+            text-align: center;
+            padding: 0.1rem 0rem;
+            width: 5rem;
+        }                                               
+    }
+}
+
