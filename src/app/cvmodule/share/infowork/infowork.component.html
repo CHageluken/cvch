@@ -2,23 +2,29 @@
   
     <div class="infowork-task">
       <app-titlen 
-        titleno=3 
+        titleno=2
         title={{info.task}} 
         titlehook={{info.period}}>
       </app-titlen>     
     </div>
     
-    <div class="infowork-project-label"><app-titlen titleno=4 title ="Projectomschrijving"></app-titlen></div>
-    <div class="infowork-project" >
+    <div class="infowork-project-label">
+      <app-titlen titleno=3 title ="Projectomschrijving"></app-titlen>
+    </div>
+    <div class="infowork-project">
       <p *ngFor="let item of info.project">
       {{item}}</p>
     </div>
-    <div class="infowork-description-label"><app-titlen titleno=4 title ="Werkzaamheden"></app-titlen></div>
+    <div class="infowork-description-label">
+      <app-titlen titleno=3 title ="Werkzaamheden"></app-titlen>
+    </div>
     <div class="infowork-description">
       <p *ngFor="let desc of info.description">
       {{desc}}</p>
     </div>
-    <div class="infowork-keyword-label"><app-titlen titleno=4 title ="Trefwoorden"></app-titlen></div>
+    <div class="infowork-keyword-label">
+      <app-titlen titleno=3 title ="Trefwoorden"></app-titlen>
+    </div>
     <div class="infowork-keyword">{{info.keyword}}</div>
 </div >
   

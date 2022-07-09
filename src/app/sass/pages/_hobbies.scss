@@ -1,13 +1,6 @@
 .hobbies{
   height: 80vh;
-  width: $basic-width;
-  margin-left: 5vw;
-  margin-top:2vw;
-  
-  @include respond(phone) {
-    height: 90vh;
-    width: 90vw;
-  }
+   
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(16,1fr);

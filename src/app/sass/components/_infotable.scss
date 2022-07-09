@@ -3,19 +3,21 @@
   font-size: $font-infotable;
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
-  width: 70vw; 
-  @include respond(phone) {
-    width:  $basic-width;
-    margin-left:5vw;
-  }
+  
   display: grid;
   justify-items: start;
-  align-items: center;
+  width: 70vw;
+  transform: translateX(-3vw); 
+  grid-template-columns: 4vw 13vw 45vw 5vw;
 
-  grid-template-columns: 5vw 13vw max-content 1fr;
-  
+  @include respond(large-phone) {
+    width: 90vw;
+    transform: translateX(-3vw); 
+    grid-template-columns: 4vw 18vw 60vw 5vw;
+  }
+
   grid-template-rows: 2.5vw min-content;
-  grid-column-gap: 2vw;
+  grid-column-gap:1vw;
 
   &-heading{
     grid-column: 2/-1;

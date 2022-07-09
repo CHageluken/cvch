@@ -3,6 +3,7 @@
   box-shadow: 0 0.5rem 1rem $color-primary; 
   border-radius: 1rem;
   width: $basic-width;
+  margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(8, max-content);
   justify-content:space-around;

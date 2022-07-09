@@ -3,23 +3,11 @@
   grid-template-columns: $side-width $content-width;
   grid-template-rows: 10vh 80vh;
   justify-content: center;
-  border-right: 5vh solid $color-primary-dark;
+  border-right: $border-right;
   justify-items: center;
-  background-color:  $color-primary-light;
-  
-  @include respond(tab-land) {
-    background-color: red;
-  }
-  @include respond(tab-port) {
-    background-color: green;
-  }
+  background-color: $color-primary-light;  
 
   @include respond(large-phone) {
-    background-color: yellow;
-  }
-
-  @include respond(phone) {
-    background-color: purple;
     border: none;
     grid-template-columns: min-content;
     grid-template-rows: max-content;
@@ -31,8 +19,7 @@
     justify-self: center;
     grid-column: 1/2;
     grid-row: 1/-1;
-    @include respond(phone) {
-      background-color: green;
+    @include respond(large-phone) {
       grid-row: 1/2;
     }  
   }
@@ -41,7 +28,7 @@
     justify-self: center;
     grid-column: 2/3;
     grid-row: 1/2;
-    @include respond(phone) {
+    @include respond(large-phone) {
       grid-column: 1/2;
       grid-row: 2/3; 
     } 
@@ -50,15 +37,14 @@
   &-content {
     padding: 0 $basic-padding;
     width: $basic-width;
-    
+    font-size: $font-medium;
     justify-self: center;
     align-self: center;
     background-color: $color-primary-light;
-
     grid-column: 2/4;
     grid-row: 2/3;
       
-    @include respond(phone) {
+    @include respond(large-phone) {
       grid-column: 1/2;
       grid-row: 3/4; 
       width: $phone-width;

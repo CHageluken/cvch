@@ -69,9 +69,9 @@ body {
   zoom: 100%;
   font-weight: 400;
   line-height: 1.4;
-  color: #101d2c;
+  color: #54483A;
   padding: 1vw; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     body {
       margin: 0;
       padding: 0rem;
@@ -124,7 +124,7 @@ html {
   margin-top: 10rem !important; }
 
 .u-infomargin {
-  margin: 0 1.5rem;
+  margin: 0;
   margin-bottom: 0.5rem; }
 
 .pageframe {
@@ -132,7 +132,7 @@ html {
   grid-template-columns: 24vw 76vw;
   grid-template-rows: 10vh 80vh;
   justify-content: center;
-  border-right: 5vh solid #6D5D4B;
+  border-right: 3vw solid #6D5D4B;
   justify-items: center;
   background-color: #f9f7f6; }
   @media only screen and (max-width: 75em) {
@@ -143,20 +143,20 @@ html {
       background-color: green; } }
   @media only screen and (max-width: 47em) {
     .pageframe {
-      background-color: yellow; } }
-  @media only screen and (max-width: 37.5em) {
-    .pageframe {
-      background-color: purple;
+      background-color: yellow;
       border: none;
       grid-template-columns: min-content;
       grid-template-rows: max-content; } }
+  @media only screen and (max-width: 37.5em) {
+    .pageframe {
+      background-color: purple; } }
   .pageframe-side {
     overflow: none;
     background-color: #6D5D4B;
     justify-self: center;
     grid-column: 1/2;
     grid-row: 1/-1; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47em) {
       .pageframe-side {
         background-color: green;
         grid-row: 1/2; } }
@@ -164,19 +164,20 @@ html {
     justify-self: center;
     grid-column: 2/3;
     grid-row: 1/2; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47em) {
       .pageframe-tabs {
         grid-column: 1/2;
         grid-row: 2/3; } }
   .pageframe-content {
     padding: 0 3vw;
     width: 70vw;
+    font-size: 1.4rem;
     justify-self: center;
     align-self: center;
     background-color: #f9f7f6;
     grid-column: 2/4;
     grid-row: 2/3; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47em) {
       .pageframe-content {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -189,7 +190,7 @@ html {
   display: inline-block; }
 
 .btn-large {
-  color: #363535;
+  color: white;
   background-color: #6D5D4B;
   padding: 1rem 2rem;
   margin: 0.5rem auto;
@@ -201,7 +202,7 @@ html {
   transition: all .5s; }
 
 .btn-info {
-  color: #363535;
+  color: #6D5D4B;
   font-size: 4rem;
   font-weight: 400;
   padding: .3rem 1rem;
@@ -213,17 +214,15 @@ html {
   font-size: 1rem;
   padding: 0.2vw;
   margin: 0.2vw;
+  border: 1px solid rgba(109, 93, 75, 0.75);
+  border-radius: 1rem;
   font-weight: 400; }
-  @media only screen and (max-width: 37.5em) {
-    .btn-small {
-      border: 1px solid rgba(16, 29, 44, 0.75);
-      border-radius: 1rem; } }
 
 .btn-large:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75); }
 
 .btn-small:active, .btn-small:hover {
-  border-bottom: 2px solid rgba(16, 29, 44, 0.75); }
+  border-bottom: 2px solid rgba(109, 93, 75, 0.75); }
 
 .heading-2 {
   font-size: 2rem;
@@ -245,52 +244,39 @@ html {
   text-align: left; }
 
 .infoline {
-  font-size: 1rem;
   background-color: white;
   display: grid;
   justify-items: start;
-  width: 40vw;
-  grid-template-columns: 10rem max-content 1fr;
-  grid-column-gap: 2rem; }
+  grid-template-columns: 8vw 60vw;
+  margin-bottom: 1rem;
+  grid-column-gap: 1vw; }
   @media only screen and (max-width: 37.5em) {
     .infoline {
-      width: 70vw;
-      margin-left: 3vw; } }
+      grid-template-columns: 15vw 70vw; } }
   .infoline-period {
     grid-column: 1/2; }
   .infoline-remark {
     justify-self: start;
     grid-column: 2/3;
     padding-right: 1rem; }
-  .infoline-link {
-    justify-self: end;
-    background-color: white;
-    grid-column: 3/4; }
-    .infoline-link a {
-      transform: translateY(-0.8rem);
-      background-color: white; }
-      .infoline-link a:hover {
-        color: blue;
-        border: none; }
-    .infoline-link .bi {
-      color: currentColor; }
 
 .infotable {
   line-height: 1.3;
   font-size: 1.4rem;
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
-  width: 70vw;
   display: grid;
   justify-items: start;
-  align-items: center;
-  grid-template-columns: 5vw 13vw max-content 1fr;
+  width: 70vw;
+  transform: translateX(-3vw);
+  grid-template-columns: 4vw 13vw 45vw 5vw;
   grid-template-rows: 2.5vw min-content;
-  grid-column-gap: 2vw; }
-  @media only screen and (max-width: 37.5em) {
+  grid-column-gap: 1vw; }
+  @media only screen and (max-width: 47em) {
     .infotable {
-      width: 70vw;
-      margin-left: 5vw; } }
+      width: 90vw;
+      transform: translateX(-3vw);
+      grid-template-columns: 4vw 18vw 60vw 5vw; } }
   .infotable-heading {
     grid-column: 2/-1;
     grid-row: 1/2; }
@@ -320,21 +306,16 @@ html {
 
 .infowork {
   padding: 0 1.5rem;
-  font-size: 1rem;
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
   display: grid;
   justify-items: start;
-  grid-template-columns: max-content 50vw;
+  grid-template-columns: 10vw 50vw;
   grid-template-rows: repeat(5, min-content);
   grid-column-gap: 3vw; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     .infowork {
-      width: 70vw;
-      margin-left: 5vw; } }
-  @media only screen and (max-width: 37.5em) {
-    .infowork {
-      grid-template-columns: max-content 30vw; } }
+      grid-template-columns: 20vw 60vw; } }
   .infowork-task {
     grid-column: 1/-1;
     grid-row: 1/2; }
@@ -388,12 +369,16 @@ html {
     position: relative;
     width: 70vw;
     top: 5vh;
-    left: 10vw;
+    left: 22vw;
     display: block;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     opacity: 1; }
+    @media only screen and (max-width: 47em) {
+      .popup-content {
+        width: 90vw;
+        left: 5vw; } }
   .popup ul {
     padding-left: 2vw; }
   .popup-img {
@@ -423,9 +408,9 @@ html {
   grid-template-columns: 24vw;
   grid-template-rows: minmax(20rem, min-content) min-content;
   padding-bottom: 1rem;
-  color: #f9f7f6;
+  color: white;
   background-color: #6D5D4B; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     .personal {
       grid-template-columns: repeat(2, 45vw);
       grid-template-rows: minmax(20rem, min-content);
@@ -433,21 +418,21 @@ html {
   .personal_pasfoto {
     grid-row: 1/2;
     margin: 4vh 2vw;
-    height: 30vh;
+    width: 15vw;
     border-radius: 2rem;
     box-shadow: 0 1rem 2rem #aaaaaa; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47em) {
       .personal_pasfoto {
         grid-row: 1/2;
         grid-column: 1/2;
-        height: 13vh;
+        width: 15vw;
         margin: 2vh 10vw; } }
   .personal_textbox {
     grid-row: 2/3;
     margin-left: 2vw;
     padding: 0 1vw;
     display: inline-block; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47em) {
       .personal_textbox {
         align-self: center;
         grid-column: 2/3;
@@ -463,7 +448,7 @@ html {
     white-space: nowrap;
     text-decoration: none; }
     .personal_a a {
-      color: #f9f7f6; }
+      color: white; }
 
 .table, .th, .td {
   border: 0.2rem solid #6D5D4B; }
@@ -496,6 +481,7 @@ html {
   box-shadow: 0 0.5rem 1rem #aaaaaa;
   border-radius: 1rem;
   width: 70vw;
+  margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(8, max-content);
   justify-content: space-around; }
@@ -514,25 +500,18 @@ html {
   display: block;
   background-color: #f9f7f6;
   border-left: 0.2rem solid #6D5D4B; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     .cvitems {
       border-top: 0.2rem solid #6D5D4B;
       border-left: none; } }
 
 .hobbies {
   height: 80vh;
-  width: 70vw;
-  margin-left: 5vw;
-  margin-top: 2vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(16, 1fr);
   grid-column-gap: 0.5rem;
   grid-row-gap: .3rem; }
-  @media only screen and (max-width: 37.5em) {
-    .hobbies {
-      height: 90vh;
-      width: 90vw; } }
   .hobbies-img {
     height: 100%;
     width: 100%;
@@ -602,10 +581,10 @@ html {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     .home {
       height: 50vh; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     .home {
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); } }
   .home-pasfoto {
@@ -625,7 +604,7 @@ html {
     transform: translate(-50%, -50%);
     text-align: center; }
   .home-primary {
-    color: #101d2c;
+    color: #54483A;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 6rem; }
@@ -642,7 +621,7 @@ html {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     grid-column-gap: 2rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47em) {
       .home-buttons {
         grid-template-columns: max-content;
         grid-template-rows: repeat(2, max-content);
@@ -650,13 +629,9 @@ html {
         grid-column-gap: 0rem;
         grid-row-gap: 2rem; } }
 
-.table, .th, .td {
-  border: 0.2rem solid #6D5D4B;
-  valign: top; }
-
 .knowledge {
-  border-collapse: collapse;
-  border: 0.2rem solid #6D5D4B;
+  valign: top;
+  border: none;
   height: 0.1rem; }
   .knowledge-th {
     background-color: #6D5D4B;
@@ -665,14 +640,11 @@ html {
     padding: 0.1rem 0.4rem; }
   .knowledge-td {
     background: #f9f7f6;
-    padding: 0.1rem 0.1rem; }
+    padding: 0.1rem 0.3rem;
+    vertical-align: top; }
     .knowledge-td-header {
-      padding: 0.1rem 0rem;
-      width: 20rem;
-      vertical-align: top; }
-    .knowledge-td-content {
-      padding: 0.1rem 0.3rem;
-      font-size: 1.4rem; }
+      vertical-align: top;
+      width: 20%; }
 
 .language {
   display: grid;
@@ -683,7 +655,7 @@ html {
   grid-auto-flow: column;
   justify-content: space-around;
   align-items: center; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 47em) {
     .language {
       margin-top: 10vh;
       grid-column-gap: 10px;
@@ -691,26 +663,15 @@ html {
   .language-text {
     font-family: 'Nunito', cursive;
     text-align: center;
-    font-size: 1.4rem;
     color: #6D5D4B; }
-  .language-1 {
-    grid-row: 1/2;
-    background-image: url(https://youtu.be/S_o-TJRHuIQ); }
   .language-img > img {
     padding: 2rem;
     height: 12rem;
     width: 100%; }
 
-.motivation_textbox {
-  color: #54483A;
-  font-size: 1.4rem; }
-
 .motivation_img {
   width: 2rem;
   margin-right: 1rem; }
-  @media only screen and (max-width: 37.5em) {
-    .motivation_img {
-      display: none; } }
 
 .motivation_p {
   margin-bottom: 0.5rem;
@@ -732,31 +693,28 @@ html {
     margin: 0;
     padding: 0;
     float: left;
+    border: none;
     position: relative; }
-    .work-shape:visited, .work-shape:hover {
-      border: none; }
   .work-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%; }
     .work-img:hover {
-      filter: blur(3px) brightness(80%); }
+      filter: blur(3px) brightness(80%);
+      border: none; }
     .work-img:active, .work-img:visited {
       filter: blur(0px) brightness(100%);
       border: 3px solid red; }
-    @media only screen and (max-width: 37.5em) {
-      .work-img {
-        display: none; } }
   .work-caption {
     position: absolute;
     top: 50%;
     left: 50%;
     font-weight: 800;
     font-size: 1.4rem;
-    border: 1px solid #101d2c;
+    border: 1px solid #6D5D4B;
     border-radius: 3rem;
-    color: #101d2c;
+    color: #54483A;
     background-color: rgba(249, 247, 246, 0.8);
     transform: translate(-50%, -50%);
     text-align: center; }

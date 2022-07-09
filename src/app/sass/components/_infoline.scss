@@ -1,15 +1,16 @@
 .infoline {
-  font-size: $font-small;
+  // font-size: $font-medium;
   background-color: white;
   display: grid;
   justify-items: start;
-  width: 40vw;
+  grid-template-columns: 8vw $infoline-width;
+  margin-bottom: 1rem;
+
   @include respond(phone) {
-    width: $basic-width;
-    margin-left: $basic-padding;
- }
-  grid-template-columns: 10rem max-content 1fr;
-  grid-column-gap: 2rem;
+    grid-template-columns: 15vw $basic-width;
+  }
+  
+  grid-column-gap: 1vw;
   
   &-period {
     grid-column: 1/2;
@@ -19,25 +20,6 @@
     justify-self: start;
     grid-column: 2/3;
     padding-right: 1rem;
-  }
-  &-link {
-    justify-self: end;
-    background-color:white;
-    grid-column: 3/4;
-    a {
-      transform: translateY(-.8rem);
-      background-color:white;
-      
-      &:hover {
-        color: blue;
-        border: none;
-      }
-
-    }
-    .bi {
-      color: currentColor;
-    }
-
   }
 }
 

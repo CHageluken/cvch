@@ -1,7 +1,7 @@
 .home {
   position: relative;
   height: 95vh;
-  @include respond(phone) {
+  @include respond(large-phone) {
     height: 50vh;
   }
 
@@ -13,7 +13,7 @@
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0 , 100% 0, 100% 75vh, 0 100%);
-  @include respond(phone) {
+  @include respond(large-phone) {
     clip-path: polygon(0 0 , 100% 0, 100% 40vh, 0 100%);
   }
 
@@ -38,7 +38,7 @@
   }
 
   &-primary{
-    color: $color-text-base;
+    color: $color-text;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 6rem;
@@ -60,7 +60,7 @@
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     grid-column-gap: 2rem;
-    @include respond(phone) {
+    @include respond(large-phone) {
       grid-template-columns: max-content;
       grid-template-rows: repeat(2, max-content);
       justify-content: center;

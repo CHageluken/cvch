@@ -1,12 +1,6 @@
-
-.table, .th, .td {
-  border: $border-dark;
-  valign: top;
-  }
-
 .knowledge{
-  border-collapse: collapse;
-  border: $border-dark;
+  valign: top;
+  border: none;
   height: 0.1rem;
   &-th {
       background-color:$color-primary-dark;
@@ -16,17 +10,13 @@
   }
       
   &-td {
-      background:$color-primary-light;
-      padding: 0.1rem 0.1rem;        
-      &-header {   
-        padding: 0.1rem 0rem;
-        width: 20rem;
-        vertical-align: top;
+    background:$color-primary-light;
+    padding: 0.1rem 0.3rem; 
+    vertical-align: top;    
+    &-header {
+      vertical-align: top;    
+      width:20%;    
     }                                               
-    &-content {
-          padding: 0.1rem 0.3rem;     
-          font-size: $font-size-knowledge;
-      }
   }
 }
 

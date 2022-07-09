@@ -28,9 +28,14 @@
       font-size: $font-size-popup;
       padding: 1vw;
       position: relative;
-      width:  $basic-width;
+      width: $basic-width;      
       top: 5vh;
-      left: 10vw;
+      left: 22vw;
+
+      @include respond(large-phone) {
+        width: $phone-width;
+        left: 5vw;
+      }
 
       display: block;
       background-color: white;

@@ -1,19 +1,8 @@
-<div class="infoline u-infomargin">
+<div class="infoline">
     <div class="infoline-period">{{info.period}}</div>
     <div class="infoline-remark">
-      <p>{{info.remark1}}</p>
-      <p *ngIf = "info.remark2">{{info.remark2}}</p>
-      <p *ngIf = "info.remark3">{{info.remark3}}</p>
+      {{info.remark1}}
     </div>
-    <div class="infoline-link">
-      <a *ngIf= "info.link1" routerLink={{info.link1}}
-          class="btn btn-info">
-          <i class="bi bi-info-circle-fill" fill="currentColor" ></i>
-      </a>
-      <p *ngIf= "!info.link1">
-          &nbsp;
-      </p>
-    </div >
   </div>
   
   

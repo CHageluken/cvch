@@ -9,7 +9,7 @@ export class QfactorsComponent {
   constructor() { }
 
   works: InfoWork[] = [
-    { period: "2019-01/2022",
+    { period: "2019 - jan 2022",
       task: "Functionaliteit verbeteren",
       project: [
         "Via diverse kanalen (sales, internet) komen continu suggesties voor aanvullingen binnen. Daarnaast is een product nooit af. Er zijn altijd wel dingen die beter kunnen of die gewoon fout zijn. Dit gebeurt gedurende de gehele ontwikkeltijd."],
@@ -30,7 +30,7 @@ export class QfactorsComponent {
         "• Database tabellen gedefinieerd en aangemaakt",
         "• Java services in backend aangemaakt, controller opgezet."],
     keyword: "Java 8, Angular 11, Spring"},
-    { period: "11/2019-01/2022",
+    { period: "nov 2019 - jan 2022",
       task: "Refactoring frontend/backend",
       project: [
         "Frontend meer toegespitst op presentatie van gegevens. Veel van de frontend scripts waren een vorm van retrievals. Als dit in de backend al is uitgevoerd dan neemt de datatransfer af ", 
@@ -42,7 +42,7 @@ export class QfactorsComponent {
         "• Services en/of controllers uitgebreid of nieuw toegevoegd;",
         "• Modellen uitgebreid of nieuw toegevoegd."],
       keyword: "Java 8, Angular 11, Spring"},
-      { period: "2019 aug",
+      { period: " aug 2019",
         task: "Server transfer",  
         project: [
           "Bij aanvang van mijn werkzaamheden voor QFactors stond de test en development samen op een server en de productieversie op een andere server. De directeur wilde overgaan op een andere server-provider en bovendien alles op één server. Ik heb deze transfer volledig uitgevoerd."],

@@ -8,10 +8,10 @@ body {
   zoom: 100%;
   font-weight: 400;
   line-height: 1.4;
-  color: $color-text-base;
+  color: $color-text;
   padding: 1vw;
 
-  @include respond(phone) {
+  @include respond(large-phone) {
     margin: 0;
     padding: 0rem;
     padding-top: 1vh;

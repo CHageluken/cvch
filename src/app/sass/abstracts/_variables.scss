@@ -1,8 +1,8 @@
 $color-primary-light:rgb(249, 247, 246);
 $color-primary: rgb(170, 170, 170);
 $color-primary-dark: #6D5D4B;
-$color-text-base: #101d2c;
-$color-button: #54483A;
+$color-text: #54483A;
+$color-text-inverse: white;
 $color-text-button: rgb(54, 53, 53);
 
 // borders
@@ -24,15 +24,9 @@ $font-medium-small: 1.2rem;
 $font-small: 1rem;
 $font-extra-small: 0.5rem;
 
-$font-small-tab-port: 1rem;
-$font-small-tab-phone: 0.8rem;
 $font-size-hobbies: $font-medium-small;
-
 $font-infotable: $font-medium;
 $font-size-popup: $font-medium;
-$font-size-motivation: $font-medium;
-$font-size-languages: $font-medium;
-$font-size-knowledge: $font-medium;
 $font-size-work-caption: $font-medium;
 
 $font-size-button-large: $font-large;
@@ -46,13 +40,41 @@ $font-size-close: 2.5rem; // close cross
 $small-padding: 0.2vw;
 $large-width: 90vw;
 
+// pageframe standard
+// sidebar: side-width
+// tabs   : content-width
+// content: content-width = 
+//          - basicwidth + 
+//          - borderwidth (left padding)
+//          - borderwidth (right coloured border-right)
+
 $content-width: 76vw; // 70 + 2*3;
+$border-width: 3vw;
+$border-right: $border-width solid $color-primary-dark;
 $side-width: 24vw; // 100 -76
 $basic-padding: 3vw;
 $basic-width: 70vw;
-$basic-width2: 30vw; // 70/2 afgerond
 
+// pageframe phone
+// sidebar: side-width (2 * $phone-half)
+// tabs   : content-width (second bar)
+// content: content-width = 
+//          - basic-width + 
+//          - border-width (left padding)
+//          - border-width (right coloured border-right)
 
 $phone-padding: 1vw;
 $phone-width: 90vw;
-$phone-width2: 45vw;
+$phone-half: 45vw;
+
+// popup standard
+// total width: basic-width (70vw)
+// infoline-width: infoline-width (60vw); 
+
+$infoline-width: 60vw;
+$infowork-width: 50vw;
+$infowork-width-phone: 60vw;
+
+// popup phone
+// total width: $phone-width (90vw)
+// infoline-width: content-width ;

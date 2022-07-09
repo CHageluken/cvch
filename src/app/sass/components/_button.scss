@@ -6,7 +6,7 @@
   }
 
 .btn-large{
-  color: $color-text-button;
+  color: $color-text-inverse;
   background-color: $color-primary-dark;
   padding: 1rem 2rem;
   margin: 0.5rem auto;
@@ -19,7 +19,7 @@
 }
 
 .btn-info{
-  color: $color-text-button;
+  color: $color-primary-dark;
   font-size: $font-size-button-extralarge;
   font-weight: 400;
   padding: .3rem 1rem;
@@ -33,21 +33,19 @@
   padding: $small-padding;
   margin: $small-padding;
 
-  @include respond(phone) {
-    border:1px solid rgba($color-text-base, 0.75);
-    border-radius: 1rem;
-  } 
+  border:1px solid rgba($color-primary-dark, 0.75);
+  border-radius: 1rem;
+   
 
   font-weight: 400;
 }
 
 .btn-large:active{
-  //transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
 
 .btn-small:active, .btn-small:hover{
-  border-bottom:2px solid rgba($color-text-base, 0.75);
+  border-bottom:2px solid rgba($color-primary-dark, 0.75);
 }
 
 

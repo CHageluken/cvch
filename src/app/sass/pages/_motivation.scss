@@ -1,16 +1,8 @@
 .motivation {
      
-  &_textbox {
-    color: $color-button;  
-    font-size: $font-size-motivation;   
-  }
-
   &_img {
     width: 2rem;
     margin-right: 1rem;
-    @include respond(phone) {
-      display: none
-    }
   }
 
   &_p {
