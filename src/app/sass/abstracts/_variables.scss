@@ -13,7 +13,7 @@ $border-dark: 0.2rem solid $color-primary-dark;
 $bp-largest: 75%;        // 1800px => 1rem = 12px  12/16
 $bp-large:  56.25%;      // 1200px => 1rem = 9px    9/16 = 62.5%
 $bp-medium: 50%;         //  900px => 1rem = 8px    8/16
-$bp-smallmedium: 43%;        //  600px => 1rem = 6px    6/16
+$bp-smallmedium: 50%;        //  600px => 1rem = 6px    6/16
 $bp-small: 37.5%;        //  600px => 1rem = 6px    6/16
 
 $font-extralarge: 4rem;
@@ -39,6 +39,7 @@ $font-size-close: 2.5rem; // close cross
 
 $small-padding: 0.2vw;
 $large-width: 90vw;
+$margin-inbetween: 1vh;
 
 // pageframe standard
 // sidebar: side-width

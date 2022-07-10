@@ -4,8 +4,8 @@
   display: grid;
   justify-items: start;
   grid-template-columns: 8vw $infoline-width;
-  margin-bottom: 1rem;
-
+  margin-bottom: $margin-inbetween;
+ 
   @include respond(phone) {
     grid-template-columns: 15vw $basic-width;
   }

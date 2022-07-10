@@ -1,5 +1,5 @@
 .infowork {
-    padding: 0 1.5rem;
+    //padding: 0 1.5rem;
     background-color: white;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
     
@@ -8,7 +8,8 @@
     grid-template-columns: 10vw $infowork-width;
     grid-template-rows: repeat(5, min-content);
     grid-column-gap: 3vw;
-
+    margin-bottom: $margin-inbetween;
+ 
     @include respond(large-phone) {
         grid-template-columns: 20vw $infowork-width-phone;
     }

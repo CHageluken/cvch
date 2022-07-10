@@ -88,7 +88,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 47em) {
     html {
-      font-size: 43%; } }
+      font-size: 50%; } }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 37.5%; } }
@@ -237,7 +237,7 @@ html {
   display: grid;
   justify-items: start;
   grid-template-columns: 8vw 60vw;
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
   grid-column-gap: 1vw; }
   @media only screen and (max-width: 37.5em) {
     .infoline {
@@ -256,26 +256,41 @@ html {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
   display: grid;
   justify-items: start;
-  width: 70vw;
   transform: translateX(-3vw);
+  width: 70vw;
   grid-template-columns: 4vw 13vw 45vw 5vw;
+  grid-row-gap: 1rem;
+  margin-bottom: 1vh;
   grid-template-rows: 2.5vw min-content;
   grid-column-gap: 1vw; }
   @media only screen and (max-width: 47em) {
     .infotable {
       width: 90vw;
       transform: translateX(-3vw);
-      grid-template-columns: 4vw 18vw 60vw 5vw; } }
+      grid-template-columns: 8vw 18vw 53vw 5vw; } }
   .infotable-heading {
+    margin-left: 1vw;
     grid-column: 2/-1;
     grid-row: 1/2; }
-  .infotable-img {
+  .infotable-img1 {
+    height: 5vh;
+    padding-left: 1rem;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center; }
+    @media only screen and (max-width: 47em) {
+      .infotable-img1 {
+        height: 3vh; } }
+  .infotable-img2 {
+    width: 100%;
     padding-left: 1rem;
     grid-column: 1/2;
     grid-row: 1/3;
     align-self: center;
     justify-self: center; }
   .infotable-period {
+    margin-left: 1vw;
     grid-column: 2/3;
     grid-row: 2/3; }
   .infotable-remark {
@@ -294,14 +309,14 @@ html {
       color: currentColor; }
 
 .infowork {
-  padding: 0 1.5rem;
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
   display: grid;
   justify-items: start;
   grid-template-columns: 10vw 50vw;
   grid-template-rows: repeat(5, min-content);
-  grid-column-gap: 3vw; }
+  grid-column-gap: 3vw;
+  margin-bottom: 1vh; }
   @media only screen and (max-width: 47em) {
     .infowork {
       grid-template-columns: 20vw 60vw; } }
@@ -633,7 +648,7 @@ html {
     vertical-align: top; }
     .knowledge-td-header {
       vertical-align: top;
-      width: 20%; }
+      width: 30%; }
 
 .language {
   display: grid;
