@@ -5,13 +5,13 @@
     
     display: grid;
     justify-items: start;
-    grid-template-columns: 10vw $infowork-width;
+    grid-template-columns: 15vw $infowork-width;
     grid-template-rows: repeat(5, min-content);
     grid-column-gap: 3vw;
     margin-bottom: $margin-inbetween;
  
     @include respond(large-phone) {
-        grid-template-columns: 20vw $infowork-width-phone;
+        grid-template-columns: 25vw $infowork-width-phone;
     }
 
     &-task {

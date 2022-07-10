@@ -313,13 +313,13 @@ html {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
   display: grid;
   justify-items: start;
-  grid-template-columns: 10vw 50vw;
+  grid-template-columns: 15vw 50vw;
   grid-template-rows: repeat(5, min-content);
   grid-column-gap: 3vw;
   margin-bottom: 1vh; }
   @media only screen and (max-width: 47em) {
     .infowork {
-      grid-template-columns: 20vw 60vw; } }
+      grid-template-columns: 25vw 60vw; } }
   .infowork-task {
     grid-column: 1/-1;
     grid-row: 1/2; }
