@@ -1,22 +1,18 @@
 .knowledge{
-  valign: top;
   border: none;
   height: 0.1rem;
-  &-th {
-      background-color:$color-primary-dark;
-      color: $color-primary-light;
-      text-align: left;
-      padding: 0.1rem 0.4rem;
-  }
-      
-  &-td {
-    background:$color-primary-light;
-    padding: 0.1rem 0.3rem; 
-    vertical-align: top;    
-    &-header {
-      vertical-align: top;    
-      width:30%;    
-    }                                               
+  background: $color_primary_light;
+  
+  &_td {
+    vertical-align: top;
+    padding-bottom: 2rem;
+    &_header {
+      font-weight: bold; 
+      padding-right: 2rem;
+    } 
+    &_content {
+      padding-left: 2rem;
+    }                                              
   }
 }
 

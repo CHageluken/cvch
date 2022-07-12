@@ -1,11 +1,11 @@
 .pageframe {
   display:grid;
-  grid-template-columns: $side-width $content-width;
+  grid-template-columns: $side_width $content_width;
   grid-template-rows: 10vh 80vh;
   justify-content: center;
-  border-right: $border-right;
+  border-right: $border_right;
   justify-items: center;
-  background-color: $color-primary-light;  
+  background-color: $color_primary_light;  
 
   @include respond(large-phone) {
     border: none;
@@ -13,9 +13,9 @@
     grid-template-rows: max-content;
   }
   
-  &-side {
+  &_side {
     overflow:none;
-    background-color: $color-primary-dark;
+    background-color: $color_primary_dark;
     justify-self: center;
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -24,7 +24,7 @@
     }  
   }
   
-  &-tabs {
+  &_tabs {
     justify-self: center;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -34,20 +34,20 @@
     } 
   }
 
-  &-content {
-    padding: 0 $basic-padding;
-    width: $basic-width;
-    font-size: $font-medium;
+  &_content {
+    padding: 0 $basic_padding;
+    width: $basic_width;
+    font-size: $font_medium;
     justify-self: center;
     align-self: center;
-    background-color: $color-primary-light;
+    background-color: $color_primary_light;
     grid-column: 2/4;
     grid-row: 2/3;
       
     @include respond(large-phone) {
       grid-column: 1/2;
       grid-row: 3/4; 
-      width: $phone-width;
+      width: $phone_width;
     }  
   } 
 }

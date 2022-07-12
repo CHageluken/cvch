@@ -5,12 +5,12 @@
   display: inline-block;
   }
 
-.btn-large{
-  color: $color-text-inverse;
-  background-color: $color-primary-dark;
+.btn_large{
+  color: $color_text_inverse;
+  background-color: $color_primary_dark;
   padding: 1rem 2rem;
   margin: 0.5rem auto;
-  font-size: $font-size-button-large;
+  font-size: $font_large;
   font-weight: 400;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.75);
   border: none;
@@ -18,34 +18,30 @@
   transition: all .5s;
 }
 
-.btn-info{
-  color: $color-primary-dark;
-  font-size: $font-size-button-extralarge;
+.btn_info{
+  color: $color_primary_dark;
+  font-size: $font_extra_large;
   font-weight: 400;
   padding: .3rem 1rem;
   border: none;
 }
 
-.btn-small{
-  color: $color-text-button;
-  background-color: $color-primary-light;
+.btn_small{
+  color: $color_text_button;
+  background-color: $color_primary_light;
   font-size: $font-small;
-  padding: $small-padding;
-  margin: $small-padding;
+  padding: $small_padding;
+  margin: $small_padding;
 
-  border:1px solid rgba($color-primary-dark, 0.75);
+  border:1px solid rgba($color_primary_dark, 0.75);
   border-radius: 1rem;
    
 
   font-weight: 400;
 }
 
-.btn-large:active{
+.btn_large:active{
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
-}
-
-.btn-small:active, .btn-small:hover{
-  border-bottom:2px solid rgba($color-primary-dark, 0.75);
 }
 
 

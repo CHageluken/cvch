@@ -15,8 +15,8 @@
       background-color: rgba(black, .6);
   }
 
-  &-extra {
-    font-size: $font-size-popup;
+  &_extra {
+    font-size: $font_medium;;
     margin: 1vw;
     padding: 1vw;
     box-shadow: 0 2rem 4rem rgba(black, .2);
@@ -24,16 +24,16 @@
     opacity: 1;
 
 }
-  &-content {
-      font-size: $font-size-popup;
+  &_content {
+      font-size: $font_medium;;
       padding: 1vw;
       position: relative;
-      width: $basic-width;      
+      width: $basic_width;      
       top: 5vh;
       left: 22vw;
 
       @include respond(large-phone) {
-        width: $phone-width;
+        width: $phone_width;
         left: 5vw;
       }
 
@@ -48,7 +48,7 @@
     padding-left: 2vw;
   }
 
-  &-img {
+  &_img {
     display:block;
     width: 90%;
 }
@@ -59,14 +59,14 @@
       visibility: visible;
   }
 
-  &:target &-content {
+  &:target &_content {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1);
   }
 
-  &-close {
+  &_close {
     fill: red;
-    font-size: $font-size-close;
+    font-size: $font_size_close;
     width: 95%;
     color: black;
     text-align: right;
@@ -74,7 +74,7 @@
     display: block;
 
       &:hover {
-          color: $color-primary;
+          color: $color_primary;
       }
   }
 }

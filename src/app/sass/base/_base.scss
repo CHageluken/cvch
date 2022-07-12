@@ -8,7 +8,7 @@ body {
   zoom: 100%;
   font-weight: 400;
   line-height: 1.4;
-  color: $color-text;
+  color: $color_text;
   padding: 1vw;
 
   @include respond(large-phone) {
@@ -19,13 +19,13 @@ body {
 }
 
 html{
-  background-color: $color-primary-light;
+  background-color: $color_primary_light;
   font-size: 62.5%;
 
-  @include respond(tab-land) { font-size: $bp-large; }
-  @include respond(tab-port) { font-size: $bp-medium; }
-  @include respond(large-phone) { font-size: $bp-smallmedium; }
-  @include respond(phone) { font-size: $bp-small; }
-  @include respond(big-desktop) { font-size: $bp-largest; }   
+  @include respond(tab-land) { font-size: $bp_large; }
+  @include respond(tab-port) { font-size: $bp_medium; }
+  @include respond(large-phone) { font-size: $bp_small_medium; }
+  @include respond(phone) { font-size: $bp_small; }
+  @include respond(big-desktop) { font-size: $bp_largest; }   
 }
 

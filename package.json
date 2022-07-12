@@ -11,6 +11,7 @@
     "e2e": "ng e2e",
     "compile:sass": "node-sass src/app/sass/main.scss src/app/css/styles.css -w",
     "start": "npm-run-all --parallel watch serve compile:sass",
+    "postbuild":"copy docs/index.html docs/404.html",
     "docs": "ng build --output-path docs --base-href /cvch/"
   },
   "private": true,

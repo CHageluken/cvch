@@ -140,7 +140,7 @@
 .icon-basic-eye:before {
   content: "H";
 }
-.icon-basic-eye-closed:before {
+.icon-basic-eye_closed:before {
   content: "I";
 }
 .icon-basic-female:before {
@@ -218,7 +218,7 @@
 .icon-basic-lightbulb:before {
   content: "7";
 }
-.icon-basic-link:before {
+.icon-basic_link:before {
   content: "8";
 }
 .icon-basic-lock:before {
@@ -374,7 +374,7 @@
 .icon-basic-spread-text:before {
   content: "\e011";
 }
-.icon-basic-spread-text-bookmark:before {
+.icon-basic-spread_text-bookmark:before {
   content: "\e012";
 }
 .icon-basic-star:before {
@@ -431,7 +431,7 @@
 .icon-basic-webpage:before {
   content: "\e024";
 }
-.icon-basic-webpage-img-txt:before {
+.icon-basic-webpage_img-txt:before {
   content: "\e025";
 }
 .icon-basic-webpage-multiple:before {

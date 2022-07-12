@@ -1,6 +1,6 @@
 .infotable {
   line-height: 1.3;
-  font-size: $font-medium;
+  font-size: $font_medium;
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
   
@@ -11,7 +11,7 @@
   width: 70vw;
   grid-template-columns: 4vw 13vw 45vw 5vw;
   grid-row-gap: 1rem;
-  margin-bottom: $margin-inbetween;
+  margin-bottom: $margin_inbetween;
  
   @include respond(large-phone) {
     width: 90vw;
@@ -22,13 +22,14 @@
   grid-template-rows: 2.5vw min-content;
   grid-column-gap:1vw;
 
-  &-heading{
+  &_heading{
     margin-left: 1vw;      
     grid-column: 2/-1;
     grid-row: 1/2;
+    font-weight: bold;
   }
 
-  &-img1 {
+  &_img1 {
     height: 5vh;
     @include respond(large-phone) {
       height: 3vh;
@@ -41,7 +42,7 @@
     justify-self: center;
   }
 
-  &-img2 {
+  &_img2 {
     width: 100%;
     padding-left: 1rem;
     grid-column: 1/2;
@@ -50,18 +51,18 @@
     justify-self: center;
   }
 
-  &-period {
+  &_period {
     margin-left: 1vw;     
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  &-remark {
+  &_remark {
     grid-column: 3/4;
     grid-row: 2/3;
     padding-right: 1rem;
   }
-  &-link {
+  &_link {
     justify-self: end;
     background-color:white;
     grid-column: 4/5;

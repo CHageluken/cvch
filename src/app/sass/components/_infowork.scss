@@ -5,46 +5,46 @@
     
     display: grid;
     justify-items: start;
-    grid-template-columns: 15vw $infowork-width;
+    grid-template-columns: 15vw $infowork_width;
     grid-template-rows: repeat(5, min-content);
     grid-column-gap: 3vw;
-    margin-bottom: $margin-inbetween;
+    margin-bottom: $margin_inbetween;
  
     @include respond(large-phone) {
-        grid-template-columns: 25vw $infowork-width-phone;
+        grid-template-columns: 25vw $infowork_width_phone;
     }
 
-    &-task {
+    &_task {
         grid-column: 1/-1;
         grid-row: 1/2;
     }
     
-    &-project {
+    &_project {
         grid-column: 2/-1; 
         grid-row:2/3
     }
-    &-description {
+    &_description {
         grid-column: 2/-1;
         grid-row: 3/4;
     }
-    &-keyword {
+    &_keyword {
         grid-column: 2/-1;
         grid-row: 4/5;
     }
-    &-task {
+    &_task {
         grid-column: 1/-1;
         grid-row: 1/2;
     }
     
-    &-project-label {
+    &_project-label {
         grid-column: 1/2; 
         grid-row:2/3
     }
-    &-description-label {
+    &_description-label {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    &-keyword-label {
+    &_keyword-label {
         grid-column: 1/2;
         grid-row: 4/5;
     }

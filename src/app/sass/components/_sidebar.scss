@@ -1,35 +1,34 @@
-.personal{
+.sidebar{
   display: grid;
   position: relative;
   
-  justify-items: center;
   grid-template-columns: 24vw;
   grid-template-rows: minmax(20rem, min-content) min-content;
   padding-bottom: 1rem;
 
   @include respond(large-phone) {
-    grid-template-columns: repeat(2, $phone-half);
+    grid-template-columns: 30% 70%;
     grid-template-rows: minmax(20rem, min-content);
     padding-bottom: 0rem;
   }
-  color: $color-text-inverse;
-  background-color: $color-primary-dark;
-  
+  color: $color_text_inverse;
+  background-color: $color_primary_dark;
 
   &_pasfoto{
     grid-row: 1/2;
-    margin: 4vh 2vw;
-    width: 15vw;
-    
-    border-radius: 2rem;
-    box-shadow: 0 1rem 2rem $color-primary;
-    
+    display: flex;
+    justify-content: center;  
+    margin: 4vh 0; 
     @include respond(large-phone) {
-      grid-row: 1/2;
+      margin: 2vh 0; 
       grid-column: 1/2;
-      width: 15vw;
-      margin: 2vh 10vw;
     }
+  }
+
+  &_img {
+    width: 70%;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem $color_primary;
   }
 
   &_textbox{
@@ -39,6 +38,7 @@
     display: inline-block;
 
     @include respond(large-phone) {
+      font-size: $font_medium;
       align-self: center;
       grid-column: 2/3;
       grid-row: 1/2;
@@ -56,7 +56,7 @@
 
   &_a{
     a {
-      color: $color-text-inverse;
+      color: $color_text_inverse;
     }
     margin-right: 0.5vw;
     border: none;

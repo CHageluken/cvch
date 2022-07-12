@@ -1,8 +1,8 @@
 .tabs{
-  background-color: $color-primary-light;    
-  box-shadow: 0 0.5rem 1rem $color-primary; 
+  background-color: $color_primary_light;    
+  box-shadow: 0 0.5rem 1rem $color_primary; 
   border-radius: 1rem;
-  width: $basic-width;
+  width: $basic_width;
   margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(8, max-content);
@@ -13,12 +13,13 @@
     border: none;
   }
 
-  &-a {
-    font-size: $font-medium; 
+  &_a {
+    font-size: $font_medium; 
     float: right;
   }
-  &-active {
-    background-color: $color-primary;
+
+  &_active {
+    background-color: $color_primary_dark;
     border-radius: 1rem;
   }
 }

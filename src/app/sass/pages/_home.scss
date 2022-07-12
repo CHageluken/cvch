@@ -7,8 +7,8 @@
 
     background-image:
     linear-gradient(to right,
-    rgba($color-primary-light, 0.8),
-    rgba($color-primary-dark, 0.8)),
+    rgba($color_primary_light, 0.8),
+    rgba($color_primary_dark, 0.8)),
     url(../../assets/images/home/startpagina_background.jpg);
   background-size: cover;
   background-position: top;
@@ -17,17 +17,17 @@
     clip-path: polygon(0 0 , 100% 0, 100% 40vh, 0 100%);
   }
 
-  &-pasfoto {
+  &_pasfoto {
     position: absolute;
     top: 4%;
     right: 2%;
-    border: $border-dark;
+    border: $border_dark;
     border-radius: 2rem;
-    box-shadow: 0 1rem 2rem $color-primary;
+    box-shadow: 0 1rem 2rem $color_primary;
     width: 20%;
   }
 
-  &-textbox{
+  &_textbox{
     position: absolute;
     display: block;
     top: 40%;
@@ -37,25 +37,25 @@
     text-align: center;
   }
 
-  &-primary{
-    color: $color-text;
+  &_primary{
+    color: $color_text;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 6rem;
   }
 
-  &-primary-main{
+  &_primary_main{
     display: inline-block;
     font-size: 3rem;
     letter-spacing: .2rem;
   }
 
-  &-primary-sub{
+  &_primary_sub{
     display: inline-block;
     font-size: 1.8rem;
     letter-spacing: .13rem;
   }
-  &-buttons{
+  &_buttons{
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: center;

@@ -1,5 +1,5 @@
 .table, .th, .td {
-    border: $border-dark;
+    border: $border_dark;
 }
 
 .tr {
@@ -7,23 +7,23 @@
 }
 .study{
     border-collapse: collapse;
-    border: $border-dark;
+    border: $border_dark;
     height: 0.1rem;
-    &-th {
-        background-color:$color-primary-dark;
-        color: $color-primary-light;
+    &_th {
+        background-color:$color_primary_dark;
+        color: $color_primary_light;
         text-align: left;
         padding: 0.1rem 0.4rem;
     }
         
-    &-td {
-        background:$color-primary-light;
+    &_td {
+        background:$color_primary_light;
         padding: 0.1rem 0.1rem;        
-        &-vak {
+        &_vak {
             padding: 0.1rem 0.3rem;     
             width: 30rem;
         }
-        &-punt {
+        &_punt {
             text-align: center;
             padding: 0.1rem 0rem;
             width: 5rem;

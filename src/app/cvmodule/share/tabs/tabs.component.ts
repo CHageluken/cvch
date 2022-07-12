@@ -8,7 +8,7 @@ export interface CvItem {
 }
 
 @Component({
-  selector: 'app-tabs',
+  selector: 'app_tabs',
   templateUrl: './tabs.component.html'
 })
 

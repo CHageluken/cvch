@@ -1,20 +1,21 @@
 .heading-2{
-  font-size: $font-size-heading-2;
+  font-weight: bold;
+  font-size: $font_size_heading_2;
   letter-spacing: .13rem;
-  color: $color-primary-dark;
+  color: $color_primary_dark;
 }
 
 .heading-3{
   display: inline-block;
-  font-size: $font-size-heading-3;
+  font-size: $font_size_heading_3;
   letter-spacing: .13rem;
-  color: $color-text-button;
+  color: $color_text_button;
   text-align: left;
 }
 .heading-4{
   display: inline-block;
-  font-size: $font-size-heading-4;
+  font-size: $font_size_heading_4;
   letter-spacing: .13rem;
-  color: $color-text-button;
+  color: $color_text_button;
   text-align: left;
 }

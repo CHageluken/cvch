@@ -14,11 +14,11 @@ export class KnowledgeComponent {
 
   knows:InfoKnow [] = [
     {header: "Framework",
-     content: "Angular JS/5/6/11, Sass, Spring, Hibernate, Swing, EJB, JEE,Selenium, JUnit, MockMVC, Gradle, Maven, Node JS, JavaScript, Vadim, Swagger, Gherkin"},    
+     content: "Angular JS/5/6/11, Spring, Hibernate, Swing, EJB, JEE,Selenium, JUnit, MockMVC, Gradle, Maven, Node JS, JavaScript, Vadim, Swagger, Gherkin"},    
     {header: "Web", 
      content: "XML, REST, SOAP, JSP, JSTL, YAML"},
     {header: "Talen", 
-     content:"Java 7/8/11, JavaScript, HTML 4/5, MySQL, PostGreSQL, XQuery, Python, Basic and Pascal, Haskell"}, 
+     content:"Java 7/8/11, JavaScript, HTML 4/5, Sass, MySQL, PostGreSQL, XQuery, Python, Basic and Pascal, Haskell"}, 
     {header: "DevOps", 
      content: "Git (GitHub, Bitbucket, SourceTree), Jenkins, Jira, Subversion/ortoiseSVN, Gitea"}, 
     {header: "Basis", 

@@ -15,12 +15,16 @@
   justify-content: space-around;
   align-items: center;
 
-  &-text {
+  &_text {
     font-family: 'Nunito', cursive;
     text-align: center;
-    color: $color-primary-dark;
+    color: $color_primary_dark;
+    &_header {
+      font-weight: bold;
+      font-size: $font_large;
+    }
   }
-  &-img >img{
+  &_img >img{
     padding: 2rem;
     height: 12rem;
     width: 100%;
