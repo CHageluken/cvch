@@ -19,12 +19,13 @@
 
   &_pasfoto {
     position: absolute;
-    top: 4%;
-    right: 2%;
+    top: 4vw;
+    right: 4vw;
     border: $border_dark;
     border-radius: 2rem;
     box-shadow: 0 1rem 2rem $color_primary;
-    width: 20%;
+    width: 20vw;
+    height: 24vw;
   }
 
   &_textbox{

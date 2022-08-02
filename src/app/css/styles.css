@@ -427,7 +427,8 @@ html {
         margin: 2vh 0;
         grid-column: 1/2; } }
   .sidebar_img {
-    width: 70%;
+    width: 15vw;
+    height: 18vw;
     border-radius: 2rem;
     box-shadow: 0 1rem 2rem #aaaaaa; }
   .sidebar_textbox {
@@ -593,12 +594,13 @@ html {
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); } }
   .home_pasfoto {
     position: absolute;
-    top: 4%;
-    right: 2%;
+    top: 4vw;
+    right: 4vw;
     border: 0.2rem solid #6D5D4B;
     border-radius: 2rem;
     box-shadow: 0 1rem 2rem #aaaaaa;
-    width: 20%; }
+    width: 20vw;
+    height: 24vw; }
   .home_textbox {
     position: absolute;
     display: block;
@@ -677,7 +679,7 @@ html {
   margin-right: 1rem; }
 
 .motivation_p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-size: inherit; }
 
 .work {
