@@ -499,7 +499,8 @@ html {
     float: right; }
   .tabs_active {
     background-color: #6D5D4B;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    color: #f9f7f6; }
 
 .cvitems {
   display: block;
