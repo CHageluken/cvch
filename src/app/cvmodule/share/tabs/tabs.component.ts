@@ -31,7 +31,7 @@ export class TabsComponent implements OnInit {
   cvitems:CvItem[] = [
     {title: "Motivatie", link: "motivation"},
     {title: "Opleiding", link: "education"},    
-    {title: "Werk", link: "work/ict"}, 
+    {title: "Werk", link: "work"}, 
     {title: "IT kennis", link: "knowledge"}, 
     {title: "Talen", link: "language"} ,
     {title: "Cursussen", link: "courses"} ,
@@ -42,5 +42,11 @@ export class TabsComponent implements OnInit {
   routeChange(link:string) {
     this.currentlink = link;
     this.cvitemsService.changeLink(link);
+  }
+
+  compare(currentlink: string, itemlink: string): boolean {
+    if (currentlink.includes('work')) {
+      return itemlink.includes('work')
+    } else return itemlink == currentlink;
   }
 }

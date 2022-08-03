@@ -7,7 +7,7 @@
   padding-bottom: 1rem;
 
   @include respond(large-phone) {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30vw 60vw;
     grid-template-rows: minmax(20rem, min-content);
     padding-bottom: 0rem;
   }

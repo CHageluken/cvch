@@ -414,7 +414,7 @@ html {
   background-color: #6D5D4B; }
   @media only screen and (max-width: 47em) {
     .sidebar {
-      grid-template-columns: 30% 70%;
+      grid-template-columns: 30vw 60vw;
       grid-template-rows: minmax(20rem, min-content);
       padding-bottom: 0rem; } }
   .sidebar_pasfoto {

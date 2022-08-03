@@ -16,7 +16,7 @@ export class WorkComponent implements OnInit {
 
   ngOnInit() {
     this.router.navigate(['/cvitems/work/ict']);
-    
+    this.cvitemsService.changeLink('work/ict');
   }
   routeChange(link:string) {
     this.cvitemsService.changeLink(link);
