@@ -8,6 +8,7 @@ export interface InfoShape {
   remark1: string;
   remark2?: string;
   remark3?: string;
+  remark4?: string; 
   link1?: string;
 }
 

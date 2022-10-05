@@ -13,6 +13,7 @@ export class EducationComponent {
     remark1: "Bachelor: Propedeuse Informatica (2015)",
     remark2: "Bachelor Informatica (april 2019)",
     remark3: "Master Software Engineering (juli 2022)",
+    remark4: "Master Artificial Intelligence (huidige studie)",
     link1: "study"
   },
   { image2: "assets/images/education/LUCLogo.png",
