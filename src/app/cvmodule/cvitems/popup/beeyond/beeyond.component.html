@@ -1,0 +1,18 @@
+<div class="popup pageframe_content">
+  <div class="popup_content">
+      <app-popupreturn></app-popupreturn>
+      <div class="popup_extra">
+        <B>Beeyond bv</B> ontwikkelt een PIM pakket waarmee ondernemingen hun eigen databeheer 
+        kunnen inrichten. Klanten maken daarbij gebruik van dataopslag in een OrientDB 
+        database die Beeyond bv beschikbaar stelt. Gebruikers kunnen hun eigen data-entiteiten 
+        en attributen aanmaken en specifieke validatie toe te voegen. 
+        Klanten kunnen een verzoek voor specifieke functionaliteit aanvragen.
+        <br>
+        De frontend heeft een grondige revisie ondergaan en wordt binnenkort als Beeyond versie 
+        2.0 in de markt gezet. Voor de oude versie moeten nog steeds bugs verholpen worden. 
+      </div>
+      <div *ngFor="let item of works">
+          <app-infowork [info] = item ></app-infowork>
+      <div>
+  </div>
+</div>
