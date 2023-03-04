@@ -7,11 +7,12 @@
     vertical-align: top;
     padding-bottom: 2rem;
     &_header {
+      width: 17vw;
       font-weight: bold; 
-      padding-right: 2rem;
+      padding-right: 1rem;
     } 
     &_content {
-      padding-left: 2rem;
+      padding-left: 1rem;
     }                                              
   }
 }

@@ -16,11 +16,13 @@
   }
 
   &_extra {
-    font-size: $font_medium;;
-    margin: 1vw;
+    background-color: white;
+    font-size: $font_medium;
+    margin: 1vw 0vw;
     padding: 1vw;
     box-shadow: 0 2rem 4rem rgba(black, .2);
     border-radius: 3px;
+    border: .2vw solid $color_primary_dark;
     opacity: 1;
 
 }

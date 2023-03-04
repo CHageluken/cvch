@@ -14,6 +14,7 @@ import { ShareModule } from '../share/share.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WorkComponent } from './work/work.component';
 import { OrganonComponent } from './popup/organon/organon.component';
+import { BeeyondComponent } from './popup/beeyond/beeyond.component';
 import { QfactorsComponent } from './popup/qfactors/qfactors.component';
 import { SligroComponent } from './popup/sligro/sligro.component';
 import { PublicationsComponent } from './popup/publications/publications.component';
@@ -32,6 +33,7 @@ import { SligrostageComponent } from './popup/sligrostage/sligrostage.component'
     WorkComponent,
     
     OrganonComponent,
+    BeeyondComponent,
     QfactorsComponent,
     SligroComponent,
     SligrostageComponent,

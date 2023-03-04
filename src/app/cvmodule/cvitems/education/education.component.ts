@@ -7,13 +7,17 @@ import { InfoShape } from '../../share/infotable/infotable.component';
 })
 export class EducationComponent {
   shapes: InfoShape[] = [
+    { image1: "assets/images/education/OULogo.jpg",
+    company: "Open Universiteit",
+    period: "2022 - heden",
+    remark1: "Master Artificial Intelligence (huidige studie)"
+  },
   { image1: "assets/images/education/OULogo.jpg",
     company: "Open Universiteit",
-    period: "2013 - heden",
+    period: "2013 - 2022",
     remark1: "Bachelor: Propedeuse Informatica (2015)",
     remark2: "Bachelor Informatica (april 2019)",
     remark3: "Master Software Engineering (juli 2022)",
-    remark4: "Master Artificial Intelligence (huidige studie)",
     link1: "study"
   },
   { image2: "assets/images/education/LUCLogo.png",

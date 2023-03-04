@@ -10,8 +10,9 @@ export class IctComponent {
   shapes: InfoShape[] = [
     { image2: "assets/images/work/beeyond.png",
       company: "Beeyond bv, Eindhoven",
-      period: "sep 2022 - heden",
-      remark1: "Developer"
+      period: "sep 2022 - mrt 2023",
+      remark1: "Developer",
+      link1: "beeyond"
     },
     { image2: "assets/images/work/qfactors_logo.gif",
       company:  "QFactors bv, Doetinchem",
@@ -21,7 +22,7 @@ export class IctComponent {
     },
     { image2: "assets/images/work/sligro-logo.png",
       company:  "Sligro, Veghel",
-      period: "jun 2017- nov 2018",
+      period: "jun 2017 - nov 2018",
       remark1: "Java ontwikkelaar",
       link1: "sligro"},
     { image2: "assets/images/work/sligro-logo.png",

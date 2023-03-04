@@ -12,6 +12,7 @@ import { KnowledgeComponent } from './cvmodule/cvitems/knowledge/knowledge.compo
 import { IctComponent } from './cvmodule/cvitems/work/ict/ict.component';
 import { SchoolComponent } from './cvmodule/cvitems/work/school/school.component';
 import { PharmacyComponent } from './cvmodule/cvitems/work/pharmacy/pharmacy.component';
+import { BeeyondComponent } from './cvmodule/cvitems/popup/beeyond/beeyond.component';
 import { QfactorsComponent } from './cvmodule/cvitems/popup/qfactors/qfactors.component';
 import { OrganonComponent } from './cvmodule/cvitems/popup/organon/organon.component';
 import { SligroComponent } from './cvmodule/cvitems/popup/sligro/sligro.component';
@@ -44,6 +45,7 @@ const appRouter: Routes =
                 ]},
                 { path: 'ict', component: IctComponent,
                 children: [
+                  { path: 'beeyond', component: BeeyondComponent},
                   { path: 'qfactors', component: QfactorsComponent},
                   { path: 'sligrostage', component: SligrostageComponent},
                   { path: 'sligro', component: SligroComponent}
