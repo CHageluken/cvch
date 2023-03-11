@@ -12,8 +12,12 @@
       padding-right: 1rem;
     } 
     &_content {
+      padding-top: 0.5rem;
       padding-left: 1rem;
     }                                              
   }
+}
+table td, table td * {
+  vertical-align: top;
 }
 

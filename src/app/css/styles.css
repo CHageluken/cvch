@@ -411,7 +411,7 @@ html {
   display: grid;
   position: relative;
   grid-template-columns: 24vw;
-  grid-template-rows: minmax(20rem, min-content) min-content;
+  grid-template-rows: minmax(20rem, min-content) 3, min-content;
   padding-bottom: 1rem;
   color: white;
   background-color: #6D5D4B; }
@@ -457,6 +457,20 @@ html {
     text-decoration: none; }
     .sidebar_a a {
       color: white; }
+  .sidebar_sent {
+    grid-row: 3/4;
+    padding: 2vw 1vw;
+    display: inline-block; }
+    .sidebar_sent_p {
+      margin-left: 3.5vw;
+      margin-right: 3vw;
+      padding: 1vw;
+      border: 1px solid white; }
+  .sidebar_version {
+    grid-row: 4/5;
+    margin-left: 2vw;
+    padding: 1vw;
+    display: inline-block; }
 
 .table, .th, .td {
   border: 0.2rem solid #6D5D4B; }
@@ -651,7 +665,11 @@ html {
       font-weight: bold;
       padding-right: 1rem; }
     .knowledge_td_content {
+      padding-top: 0.5rem;
       padding-left: 1rem; }
+
+table td, table td * {
+  vertical-align: top; }
 
 .language {
   display: grid;
@@ -684,7 +702,7 @@ html {
   margin-right: 1rem; }
 
 .motivation_p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
   font-size: inherit; }
 
 .work {

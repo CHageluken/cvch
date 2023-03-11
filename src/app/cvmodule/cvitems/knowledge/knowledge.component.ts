@@ -20,7 +20,7 @@ export class KnowledgeComponent {
     {header: "Querytalen",
      content: "MySQL, PostgreSQL, Xquery, noSQL (OrientDB)"},
     {header: "Framework",
-     content: "Angular JS/5/6/11, Sass, Spring, Hibernate, Swing, EJB, JEE, Selenium, JUnit, MockMVC, Gradle, Maven, Node JS, JavaScript, Vaadim, Swagger, Gherkin"},    
+     content: "Angular JS/5/6/11/14, Sass, Spring, Vaadim 7/8, Hibernate, Swing, EJB, JEE, Selenium, JUnit, MockMVC, Gradle, Maven, Node JS, JavaScript, Vaadim, Swagger, Gherkin"},    
     {header: "Web", 
      content: "XML, REST, SOAP, WSDL, JSP, JSTL, YAML"},
     {header: "DevOps", 

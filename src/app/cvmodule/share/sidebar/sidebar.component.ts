@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
@@ -9,10 +9,19 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class SidebarComponent implements OnInit {
   @Output() linkedIn = "http://www.linkedin.com/in/Conny-Hageluken";
   sidebarForm!:FormGroup;
-    
+  enter = "%0d";
+  @Input() subject = "CV opvragen (LinkedIn)";
+  @Input() body = "";
+  
   constructor() {}
 
   ngOnInit() {
+    this.body = "Beste Conny" + this.enter + this.enter +
+    "Ik wil graag een PDF versie van je CV opvragen" + this.enter + this.enter +
+    "reden: " + this.enter + this.enter +
+    "aanvrager: " + this.enter;
+    
+
     this.sidebarForm = new FormGroup({
       'naam': new FormControl("Conny Hageluken-Paping"),
       'adres': new FormControl("Robijnring 18"),

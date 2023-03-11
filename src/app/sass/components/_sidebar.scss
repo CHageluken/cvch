@@ -3,7 +3,7 @@
   position: relative;
   
   grid-template-columns: 24vw;
-  grid-template-rows: minmax(20rem, min-content) min-content;
+  grid-template-rows: minmax(20rem, min-content) (3,min-content);
   padding-bottom: 1rem;
 
   @include respond(large-phone) {
@@ -63,5 +63,22 @@
     border: none;
     white-space: nowrap;
     text-decoration: none;
+  }
+  &_sent{
+    grid-row: 3/4;
+    padding: 2vw 1vw;
+    display: inline-block;
+    &_p {
+      margin-left: 3.5vw;
+      margin-right: 3vw;
+      padding: 1vw;
+      border: 1px solid white;
+    }
+  }
+  &_version{
+    grid-row: 4/5;
+    margin-left: 2vw;
+    padding: 1vw;
+    display: inline-block;
   }
 }
