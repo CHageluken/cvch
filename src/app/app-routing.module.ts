@@ -21,6 +21,7 @@ import { StudyComponent } from './cvmodule/cvitems/popup/study/study.component';
 import { PublicationsComponent } from './cvmodule/cvitems/popup/publications/publications.component';
 import { SondervickComponent } from './cvmodule/cvitems/popup/sondervick/sondervick.component';
 import { LuzacComponent } from './cvmodule/cvitems/popup/luzac/luzac.component';
+import { SmartfloorComponent } from './cvmodule/cvitems/popup/smartfloor/smartfloor.component';
 
 const appRouter: Routes =
     [   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -45,6 +46,7 @@ const appRouter: Routes =
                 ]},
                 { path: 'ict', component: IctComponent,
                 children: [
+                  { path: 'smartfloor', component: SmartfloorComponent},
                   { path: 'beeyond', component: BeeyondComponent},
                   { path: 'qfactors', component: QfactorsComponent},
                   { path: 'sligrostage', component: SligrostageComponent},
