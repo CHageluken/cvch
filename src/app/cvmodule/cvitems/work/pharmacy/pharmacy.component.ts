@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InfoShape } from '../../../share/infotable/infotable.component';
+import { InfoShape } from 'src/app/cvmodule/share/infotable/infotable.component';
 
 @Component({
   selector: 'app-pharmacy',

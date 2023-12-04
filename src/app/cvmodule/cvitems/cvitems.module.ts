@@ -22,7 +22,6 @@ import { StudyComponent } from './popup/study/study.component';
 import { LuzacComponent } from './popup/luzac/luzac.component';
 import { SondervickComponent } from './popup/sondervick/sondervick.component';
 import { SligrostageComponent } from './popup/sligrostage/sligrostage.component';
-import { SmartfloorComponent } from './popup/smartfloor/smartfloor.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,6 @@ import { SmartfloorComponent } from './popup/smartfloor/smartfloor.component';
     QfactorsComponent,
     SligroComponent,
     SligrostageComponent,
-    SmartfloorComponent,
     PublicationsComponent,
     StudyComponent,
     LuzacComponent,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InfoLine } from '../../../share/infoline/infoline.component';
+import { InfoLine } from 'src/app/cvmodule/share/infoline/infoline.component';
 
 @Component({
   selector: 'app-sondervick',
