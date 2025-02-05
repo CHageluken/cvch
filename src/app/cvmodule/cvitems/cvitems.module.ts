@@ -38,7 +38,7 @@ import { SmartfloorComponent } from './popup/smartfloor/smartfloor.component';
     QfactorsComponent,
     SligroComponent,
     SligrostageComponent,
-    SmartfloorComponent, 
+    SmartfloorComponent,
     PublicationsComponent,
     StudyComponent,
     LuzacComponent,

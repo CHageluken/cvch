@@ -46,11 +46,12 @@ const appRouter: Routes =
                 ]},
                 { path: 'ict', component: IctComponent,
                 children: [
-                  { path: 'smartfloor', component: SmartfloorComponent},
                   { path: 'beeyond', component: BeeyondComponent},
                   { path: 'qfactors', component: QfactorsComponent},
                   { path: 'sligrostage', component: SligrostageComponent},
-                  { path: 'sligro', component: SligroComponent}
+                  { path: 'sligro', component: SligroComponent},
+                  { path: 'smartfloor', component: SmartfloorComponent}
+
                 ]},            
                 { path: 'pharmacy', component: PharmacyComponent,
                 children: [
