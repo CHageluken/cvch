@@ -9,13 +9,11 @@ import { TitleNComponent } from './titleN/titleN.component';
 import { PopupreturnComponent } from './popupreturn/popupreturn.component';
 import { InfolineComponent } from './infoline/infoline.component';
 import { InfoworkComponent } from './infowork/infowork.component';
-import { StudyTableComponent } from './study-table/study-table.component';
 
 @NgModule({
   declarations: [
     TitleNComponent,
     InfotableComponent,
-    StudyTableComponent,
     InfolineComponent,
     InfoworkComponent,
     PopupreturnComponent
@@ -28,7 +26,6 @@ import { StudyTableComponent } from './study-table/study-table.component';
   exports: [
     TitleNComponent,
     InfotableComponent,
-    StudyTableComponent,
     InfolineComponent,
     InfoworkComponent, 
     PopupreturnComponent

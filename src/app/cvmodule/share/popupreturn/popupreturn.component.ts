@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CvItemsService } from '../../cvitems.service';
 
 @Component({
@@ -12,7 +12,6 @@ export class PopupreturnComponent implements OnInit{
 
   ngOnInit(): void {
     this.returnaddress = "../../" + this.cvitemsService.getCurrentlink();
-    console.log(this.cvitemsService.getCurrentlink());
   }
 
 

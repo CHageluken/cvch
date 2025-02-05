@@ -18,12 +18,11 @@ import { BeeyondComponent } from './popup/beeyond/beeyond.component';
 import { QfactorsComponent } from './popup/qfactors/qfactors.component';
 import { SligroComponent } from './popup/sligro/sligro.component';
 import { PublicationsComponent } from './popup/publications/publications.component';
+import { StudyComponent } from './popup/study/study.component';
 import { LuzacComponent } from './popup/luzac/luzac.component';
 import { SondervickComponent } from './popup/sondervick/sondervick.component';
 import { SligrostageComponent } from './popup/sligrostage/sligrostage.component';
 import { SmartfloorComponent } from './popup/smartfloor/smartfloor.component';
-import { MasterSeComponent } from './popup/master-se/master-se.component';
-import { MasterAiComponent } from './popup/master-ai/master-ai.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +40,7 @@ import { MasterAiComponent } from './popup/master-ai/master-ai.component';
     SligrostageComponent,
     SmartfloorComponent, 
     PublicationsComponent,
-    MasterSeComponent,
-    MasterAiComponent,
+    StudyComponent,
     LuzacComponent,
     SondervickComponent
   ],

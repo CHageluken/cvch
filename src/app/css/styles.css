@@ -497,10 +497,6 @@ html {
       text-align: center;
       padding: 0.1rem 0rem;
       width: 5rem; }
-    .study_td_link {
-      padding: 0.1rem 0rem;
-      width: 50rem; }
-
 
 .tabs {
   background-color: #f9f7f6;
@@ -709,11 +705,6 @@ table td, table td * {
   margin-bottom: 0.9rem;
   font-size: inherit; }
 
-.motivation_textbox {
-    height: 70rem;
-    margin-bottom: 0.9rem;
-    font-size: inherit; }
-  
 .work {
   height: 70vh;
   background-color: #f9f7f6;

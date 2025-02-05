@@ -41,4 +41,4 @@ import { TabsComponent } from './cvmodule/share/tabs/tabs.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { } 
+export class AppModule { }

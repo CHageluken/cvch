@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cvch:build:production"
+              "browserTarget": "cvch:build:production"
             },
             "development": {
-              "buildTarget": "cvch:build:development"
+              "browserTarget": "cvch:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "cvch:build"
+            "browserTarget": "cvch:build"
           }
         },
         "test": {

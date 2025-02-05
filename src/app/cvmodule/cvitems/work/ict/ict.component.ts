@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InfoShape } from '../../../share/infotable/infotable.component';
+import { InfoShape } from 'src/app/cvmodule/share/infotable/infotable.component';
 
 @Component({
   selector: 'app-ict',
@@ -10,7 +10,7 @@ export class IctComponent {
   shapes: InfoShape[] = [
     { image2: "assets/images/work/smartfloor3.png",
       company: "Smart Floor (Connective Floors bv), Eindhoven",
-      period: "sep 2023 - maart 2024",
+      period: "sep 2023 - heden",
       remark1: "Backend Java developer, statisticus",
       link1: "smartfloor"
     },
