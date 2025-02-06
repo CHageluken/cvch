@@ -10,7 +10,8 @@ export class EducationComponent {
     { image1: "assets/images/education/OULogo.jpg",
     company: "Open Universiteit",
     period: "2022 - heden",
-    remark1: "Master Artificial Intelligence (huidige studie)"
+    remark1: "Master Artificial Intelligence (huidige studie)",
+    link1: "MasterAi"
   },
   { image1: "assets/images/education/OULogo.jpg",
     company: "Open Universiteit",
@@ -18,7 +19,7 @@ export class EducationComponent {
     remark1: "Bachelor: Propedeuse Informatica (2015)",
     remark2: "Bachelor Informatica (april 2019)",
     remark3: "Master Software Engineering (juli 2022)",
-    link1: "study"
+    link1: "MasterSe"
   },
   { image2: "assets/images/education/LUCLogo.png",
     company: "Universiteit Hasselt, België",
