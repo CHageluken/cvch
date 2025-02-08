@@ -1,0 +1,53 @@
+.pageframe {
+  display:grid;
+  grid-template-columns: $side_width $content_width;
+  grid-template-rows: 10vh 80vh;
+  justify-content: center;
+  border-right: $border_right;
+  justify-items: center;
+  background-color: $color_primary_light;  
+
+  @include respond(large-phone) {
+    border: none;
+    grid-template-columns: min-content;
+    grid-template-rows: max-content;
+  }
+  
+  &_side {
+    overflow:none;
+    background-color: $color_primary_dark;
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    @include respond(large-phone) {
+      grid-row: 1/2;
+    }  
+  }
+  
+  &_tabs {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    @include respond(large-phone) {
+      grid-column: 1/2;
+      grid-row: 2/3; 
+    } 
+  }
+
+  &_content {
+    padding: 0 $basic_padding;
+    width: $basic_width;
+    font-size: $font_medium;
+    justify-self: center;
+    align-self: center;
+    background-color: $color_primary_light;
+    grid-column: 2/4;
+    grid-row: 2/3;
+      
+    @include respond(large-phone) {
+      grid-column: 1/2;
+      grid-row: 3/4; 
+      width: $phone_width;
+    }  
+  } 
+}

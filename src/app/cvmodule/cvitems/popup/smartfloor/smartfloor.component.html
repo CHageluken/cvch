@@ -1,0 +1,13 @@
+<div class="popup pageframe_content">
+ 
+    <div class="popup_content">
+        <app-popupreturn></app-popupreturn>
+        <div class="popup_extra">
+            <a href={{smartfloor}} target="_blank"><B>Smart Floor</B></a> ontwikkelt een product waarmee op een innovatieve manier een bewegingsanalyse kan worden uitgevoerd met als doel valpreventie te bevorderen.
+            Valpreventie bij thuiswonende ouderen is een aandachtspunt van de regering omdat hiermee de ziektekosten omlaag kunnen gaan.
+            </div>
+        <div *ngFor="let item of works">
+            <app-infowork [info] = item ></app-infowork>
+        <div>
+    </div>
+  </div>
