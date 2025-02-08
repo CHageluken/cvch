@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InfoWork } from '../../../share/infowork/infowork.component';
+import { InfoWork } from 'src/app/cvmodule/share/infowork/infowork.component';
 
 @Component({
   selector: 'app-sligrostage',
