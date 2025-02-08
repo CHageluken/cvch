@@ -17,11 +17,12 @@ import { QfactorsComponent } from './cvmodule/cvitems/popup/qfactors/qfactors.co
 import { OrganonComponent } from './cvmodule/cvitems/popup/organon/organon.component';
 import { SligroComponent } from './cvmodule/cvitems/popup/sligro/sligro.component';
 import { SligrostageComponent } from './cvmodule/cvitems/popup/sligrostage/sligrostage.component';
-import { StudyComponent } from './cvmodule/cvitems/popup/study/study.component';
 import { PublicationsComponent } from './cvmodule/cvitems/popup/publications/publications.component';
 import { SondervickComponent } from './cvmodule/cvitems/popup/sondervick/sondervick.component';
 import { LuzacComponent } from './cvmodule/cvitems/popup/luzac/luzac.component';
 import { SmartfloorComponent } from './cvmodule/cvitems/popup/smartfloor/smartfloor.component';
+import { MasterAiComponent } from './cvmodule/cvitems/popup/master-ai/master-ai.component';
+import { MasterSeComponent } from './cvmodule/cvitems/popup/master-se/master-se.component';
 
 const appRouter: Routes =
     [   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -32,7 +33,8 @@ const appRouter: Routes =
             { path: 'courses', component: CoursesComponent },
             { path: 'education', component: EducationComponent ,
               children: [
-                {path: 'study', component: StudyComponent}
+                {path: 'masterAi', component: MasterAiComponent},
+                {path: 'masterSe', component: MasterSeComponent},
               ]},
             { path: 'hobbies', component: HobbiesComponent },
             { path: 'knowledge', component: KnowledgeComponent },

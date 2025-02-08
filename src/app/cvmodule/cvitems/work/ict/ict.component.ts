@@ -10,13 +10,13 @@ export class IctComponent {
   shapes: InfoShape[] = [
     { image2: "assets/images/work/smartfloor3.png",
       company: "Smart Floor (Connective Floors bv), Eindhoven",
-      period: "sep 2023 - heden",
+      period: "sep 2023 - mrt 2024",
       remark1: "Backend Java developer, statisticus",
       link1: "smartfloor"
     },
     { image2: "assets/images/work/beeyond.png",
       company: "Beeyond bv, Eindhoven",
-      period: "sep 2022 - mrt 2023",
+      period: "sep 2022 - mrt 2023", 
       remark1: "Developer",
       link1: "beeyond"
     },
