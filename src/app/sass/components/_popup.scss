@@ -1,0 +1,82 @@
+.popup {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(black, .6);
+  z-index: 9999;
+  opacity: 1;
+  overflow-y: scroll !important;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(5px);
+      background-color: rgba(black, .6);
+  }
+
+  &_extra {
+    background-color: white;
+    font-size: $font_medium;
+    margin: 1vw 0vw;
+    padding: 1vw;
+    box-shadow: 0 2rem 4rem rgba(black, .2);
+    border-radius: 3px;
+    border: .2vw solid $color_primary_dark;
+    opacity: 1;
+
+}
+  &_content {
+      font-size: $font_medium;;
+      padding: 1vw;
+      position: relative;
+      width: $basic_width;      
+      top: 5vh;
+      left: 22vw;
+
+      @include respond(large-phone) {
+        width: $phone_width;
+        left: 5vw;
+      }
+
+      display: block;
+      background-color: white;
+      box-shadow: 0 2rem 4rem rgba(black, .2);
+      border-radius: 3px;
+      opacity: 1;
+  }
+
+  ul {
+    padding-left: 2vw;
+  }
+
+  &_img {
+    display:block;
+    width: 90%;
+}
+
+  //Open states
+  &:target {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  &:target &_content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+
+  &_close {
+    fill: red;
+    font-size: $font_size_close;
+    width: 95%;
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+
+      &:hover {
+          color: $color_primary;
+      }
+  }
+}

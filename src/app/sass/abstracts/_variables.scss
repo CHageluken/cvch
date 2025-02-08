@@ -1,0 +1,72 @@
+$color_primary_light:rgb(249, 247, 246);
+$color_primary: rgb(170, 170, 170);
+$color_primary_dark: #6D5D4B;
+$color_text: #54483A;
+$color_text_inverse: white;
+$color_text_button: rgb(54, 53, 53);
+
+// borders
+$border_light: 0.2rem solid $color_primary_light;
+$border_dark: 0.2rem solid $color_primary_dark;
+
+// responsive breakpoints
+$bp_largest: 75%;        // 1800px => 1rem = 12px  12/16
+$bp_large:  56.25%;      // 1200px => 1rem = 9px    9/16 = 62.5%
+$bp_medium: 50%;         //  900px => 1rem = 8px    8/16
+$bp_small_medium: 50%;    //  600px => 1rem = 6px    6/16
+$bp_small: 37.5%;        //  600px => 1rem = 6px    6/16
+
+$font_medium: 1.4rem; 
+$font_medium_small: 1.2rem;
+$font_small: 1rem;
+$font_extra_small: 0.5rem;
+$font_large: 2rem;
+$font_extra_large: 4rem;
+
+$font_size_hobbies: $font_medium_small;
+
+
+$font_size_heading_2: $font_large; 
+$font_size_heading_3: $font_medium;
+$font_size_heading_4: $font_small;
+$font_size_close: 2.5rem; // close cross
+
+$small_padding: 0.2vw;
+$margin_inbetween: 1vh;
+
+// pageframe standard
+// sidebar: side-width
+// tabs   : content-width
+// content: content-width = 
+//          - basicwidth + 
+//          - borderwidth (left padding)
+//          - borderwidth (right coloured border-right)
+
+$content_width: 76vw; // 70 + 2*3;
+$border_width: 3vw;
+$border_right: $border_width solid $color_primary_dark;
+$side_width: 24vw; // 100 - 76
+$basic_padding: 3vw;
+$basic_width: 70vw;
+
+// pageframe phone
+// sidebar: side-width 
+// tabs   : content-width (second bar)
+// content: content-width = 
+//          - basic-width + 
+//          - border-width (left padding)
+//          - border-width (right coloured border-right)
+
+$phone_width: 90vw;
+
+// popup standard
+// total width: basic-width (70vw)
+// infoline-width: infoline-width (60vw); 
+
+$infoline_width: 60vw;
+$infowork_width: 50vw;
+$infowork_width_phone: 60vw;
+
+// popup phone
+// total width: $phone_width (90vw)
+// infoline-width: content-width ;

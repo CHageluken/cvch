@@ -1,0 +1,9 @@
+.cvitems {
+  display: block;
+  background-color: $color_primary_light;
+  border-left: $border_dark;
+  @include respond(large-phone) {
+    border-top: $border_dark;
+    border-left: none;
+  }
+}

@@ -1,0 +1,75 @@
+.home {
+  position: relative;
+  height: 95vh;
+  @include respond(large-phone) {
+    height: 50vh;
+  }
+
+    background-image:
+    linear-gradient(to right,
+    rgba($color_primary_light, 0.8),
+    rgba($color_primary_dark, 0.8)),
+    url(../../assets/images/home/startpagina_background.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0 , 100% 0, 100% 75vh, 0 100%);
+  @include respond(large-phone) {
+    clip-path: polygon(0 0 , 100% 0, 100% 40vh, 0 100%);
+  }
+
+  &_pasfoto {
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    border: $border_dark;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem $color_primary;
+    width: 20vw;
+    height: 24vw;
+  }
+
+  &_textbox{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 40%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &_primary{
+    color: $color_text;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+  }
+
+  &_primary_main{
+    display: inline-block;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+  }
+
+  &_primary_sub{
+    display: inline-block;
+    font-size: 1.8rem;
+    letter-spacing: .13rem;
+  }
+  &_buttons{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    grid-column-gap: 2rem;
+    @include respond(large-phone) {
+      grid-template-columns: max-content;
+      grid-template-rows: repeat(2, max-content);
+      justify-content: center;
+      grid-column-gap: 0rem;
+      grid-row-gap: 2rem;
+    }
+  }
+}
+
+
+

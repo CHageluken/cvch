@@ -1,0 +1,21 @@
+.heading-2{
+  font-weight: bold;
+  font-size: $font_size_heading_2;
+  letter-spacing: .13rem;
+  color: $color_primary_dark;
+}
+
+.heading-3{
+  display: inline-block;
+  font-size: $font_size_heading_3;
+  letter-spacing: .13rem;
+  color: $color_text_button;
+  text-align: left;
+}
+.heading-4{
+  display: inline-block;
+  font-size: $font_size_heading_4;
+  letter-spacing: .13rem;
+  color: $color_text_button;
+  text-align: left;
+}

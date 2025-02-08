@@ -1,0 +1,27 @@
+.tabs{
+  background-color: $color_primary_light;    
+  box-shadow: 0 0.5rem 1rem $color_primary; 
+  border-radius: 1rem;
+  width: $basic_width;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(8, max-content);
+  justify-content:space-around;
+  
+  @include respond(phone) {
+    box-shadow: none; 
+    border: none;
+  }
+
+  &_a {
+    font-size: $font_medium; 
+    float: right;
+  }
+
+  &_active {
+    background-color: $color_primary_dark;
+    border-radius: 1rem;
+    color: $color_primary_light;
+  }
+}
+  

@@ -1,0 +1,23 @@
+.knowledge{
+  border: none;
+  height: 0.1rem;
+  background: $color_primary_light;
+  
+  &_td {
+    vertical-align: top;
+    padding-bottom: 2rem;
+    &_header {
+      width: 17vw;
+      font-weight: bold; 
+      padding-right: 1rem;
+    } 
+    &_content {
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+    }                                              
+  }
+}
+table td, table td * {
+  vertical-align: top;
+}
+
