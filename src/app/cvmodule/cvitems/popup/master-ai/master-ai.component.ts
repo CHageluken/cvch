@@ -14,7 +14,7 @@ cijfers: Cypher[] =[
   {punt:"7,9", vak:"Bayesian Reasoning and Learning", ouLink:"https://www.ou.nl/en/-/im0902_bayesian-reasoning-and-learning"}, 
   {punt:"9,0", vak:"Responsible AI", ouLink:"https://www.ou.nl/en/-/im0802_responsible-artificial-intelligence"}, 
   {punt:"8,2", vak:"Deep Neural Engineering", ouLink:"https://www.ou.nl/en/-/im1102_deep-neural-engineering"}, 
-  {punt:"   ", vak:"Model-Based AI", ouLink:"https://www.ou.nl/en/-/im1202_model-based-artificial-intelligence"}, 
-  {punt:"   ", vak:"Capita Selecta in AI", ouLink:"https://www.ou.nl/en/-/im1402_capita-selecta-in-artificial-intelligence"},
+  {punt:"7.6", vak:"Model-Based AI", ouLink:"https://www.ou.nl/en/-/im1202_model-based-artificial-intelligence"}, 
+  {punt:"9.1", vak:"Capita Selecta in AI", ouLink:"https://www.ou.nl/en/-/im1402_capita-selecta-in-artificial-intelligence"},
   ]
 }

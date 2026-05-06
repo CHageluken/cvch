@@ -14,7 +14,7 @@ export class KnowledgeComponent {
 
   knows:InfoKnow [] = [
     {header: "Programmeertalen",
-     content: "Java 7/8/11/17, Python, HTML 4/5, Basic en Pascal, Haskell"},    
+     content: "Java 7/8/11/17, Python, HTML 4/5, ASP (Clingo), Basic en Pascal, Haskell"},    
     {header: "Scripttalen",
      content: "JavaScript, TypeScript"},
     {header: "Querytalen",

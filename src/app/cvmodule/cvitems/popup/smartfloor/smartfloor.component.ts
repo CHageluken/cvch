@@ -9,7 +9,7 @@ export class SmartfloorComponent {
   @Output() smartfloor = "http://www.smartfloor.com";
   
   works: InfoWork[] = [
-    { period: "2023 sep - heden",
+    { period: "2023 sep - mrt 2024",
     task: "Functionaliteit verbeteren",
     project: [
       "Wanneer een persoon over een Smart Floor loopt, worden allerlei loopparameters gemeten die opgeslagen en verwerkt moeten worden."
